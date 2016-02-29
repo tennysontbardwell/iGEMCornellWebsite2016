@@ -1,0 +1,56 @@
+\documentclass{sp2015course}
+\usepackage{datetime}
+\usepackage{listings,lstautogobble}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=flexible,
+}
+\usepackage{hyperref}
+
+\begin{document}
+	\begin{center}\Huge{Read this File First.}\end{center}
+	\begin{small}
+		Last updated: \today~at \currenttime
+	\end{small}
+
+	\textbf{Please read all parts of this file. It outlines the best practice for keeping your self in sync and not messing things up.}
+	\begin{enumerate}
+		\item Put java script in /js, css in /css, resources like images and sounds in /resources. When putting something new in, err on the side of organization. For example, when I wanted to add an example image, I created the directory /resources/images/placeholders.
+		\item Everything that is not required to run the website should go in the /MISC directory (except this README file).
+		\item Keep the website modular. Put each section in a separate html file.
+		\item Best practices involving git: Don't ever do a git command with -f. If you don't do that nothing will be ruined.
+
+		Here is what you need to know regarding git: how to add (or track) files. How to commit changes. How to push and pull changes.
+
+		Additional things you might want to know is how to create new branches, switch branches, checkout projects, and revert changes.
+
+		But here's the basics: to ``save" your changes locally (save a version that will always be recoverable) first navigate to the iGEMCornellWebsite2016 directory, then type
+		\begin{lstlisting}[autogobble=true]
+			git add -A
+		\end{lstlisting}
+		and then
+		\begin{lstlisting}[autogobble=true]
+			git commit -a -m "A description of what you did goes here"
+		\end{lstlisting}
+		To send your changes to the server (after you set up git to link with github):
+		\begin{lstlisting}[autogobble=true]
+			git push
+		\end{lstlisting}
+		And to get new changes
+		\begin{lstlisting}[autogobble=true]
+			git pull
+		\end{lstlisting}
+		Check out \href{https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf}{\underline{this cheatsheet}} for more.
+	\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
