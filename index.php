@@ -6,6 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/aboutigem.css">
+	<link rel="stylesheet" href="css/achievements.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/projects.css">
+	<link rel="stylesheet" href="css/sponsors.css">
+	<link rel="stylesheet" href="css/subteams.css">
+	<link rel="stylesheet" href="css/team.css">
+	<link rel="stylesheet" href="css/video.css">
 	<title>Cornell iGEM</title>
 </head>
 <body>

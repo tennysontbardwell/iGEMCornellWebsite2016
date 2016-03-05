@@ -1,16 +1,3 @@
-.bgimage {
-	background-image: url('../resources/placeholders/dog.jpg');
-	background-position: center center;
-	background-size: cover;
-	height: 200px;
-}
-
-.footer {
-	height: 200px;
-	background-color: #a9a9a9;
-	margin-top: 50px;
-}
-
 .major-section{
 	margin-top: 30px;
 	margin-bottom: 30px;
