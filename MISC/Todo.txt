@@ -1,0 +1,15 @@
+Todo
+	Mechanics
+		Make the nav bar
+			Feb 29 - Amanda is somewhat working on
+		Make the project section
+		Make the team member grid
+		Make the achievement section
+		Make each Subteam section
+		Make the subteam section viewer
+		Make the recruiting section
+	Styles
+		Color Schemes
+		Text fonts
+		section separators
+	Video
