@@ -20,25 +20,25 @@
 </head>
 <body>
 	<!-- Header Section -->
-	<?php require("html/header.html"); ?>
+	<?php //require("html/header.html"); ?>
 	<!-- Navagation Bar -->
-	<?php require("html/navbar.html"); ?>
+	<?php require("html/navbar.php"); ?>
 	<!-- Video Section -->
-	<?php require("html/video.html"); ?>
+	<?php require("html/video.php"); ?>
 
 	<div class="container-fluid">
 		<div class="row">
 			<!-- Various Sections -->
-			<?php require("html/aboutigem.html"); ?>
-			<?php require("html/projects.html"); ?>
-			<?php require("html/achievements.html"); ?>
-			<?php require("html/subteams.html"); ?>
-			<?php require("html/team.html"); ?>
-			<?php require("html/sponsors.html"); ?>		
+			<?php require("html/aboutigem.php"); ?>
+			<?php require("html/projects.php"); ?>
+			<?php require("html/achievements.php"); ?>
+			<?php require("html/subteams.php"); ?>
+			<?php require("html/team.php"); ?>
+			<?php require("html/sponsors.php"); ?>		
 		</div>
 	</div>
 	<!-- Footer Section -->
-	<?php require("html/footer.html"); ?>
+	<?php require("html/footer.php"); ?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
