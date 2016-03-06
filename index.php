@@ -13,23 +13,24 @@
 	<meta http-equiv="pragma" content="no-cache" />
 	<?php 
 		function bustCache() {
+			echo "?";
 			echo time();
 		}
 	?>
 	<!-- End development -->
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/aboutigem.css?<?php bustCache()?>">
+	<link rel="stylesheet" href="css/styles.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/aboutigem.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/achievements.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/footer.css?<?php bustCache() ?>">
-	<link rel="stylesheet" href="css/header.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/navbar.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/projects.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/sponsors.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/subteams.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/team.css?<?php bustCache()?>">
-	<link rel="stylesheet" href="css/video.css?<?php bustCache()?>">
+	<link rel="stylesheet" href="css/footer.css<?php bustCache() ?>">
+	<link rel="stylesheet" href="css/header.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/navbar.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/projects.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/sponsors.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/subteams.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/team.css<?php bustCache()?>">
+	<link rel="stylesheet" href="css/video.css<?php bustCache()?>">
 	<?php require("html/accordion.php") ?>
 	<title>Cornell iGEM</title>
 </head>

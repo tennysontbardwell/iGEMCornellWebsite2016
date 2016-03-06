@@ -18,7 +18,7 @@
 
 	.accordion ul li {
 		display: table-cell;
-		vertical-align: bottom;
+		vertical-align: middle;
 		position: relative;
 		width: 16.666%;
 		height: 350px;
@@ -28,39 +28,44 @@
 	}
 
 	.accordion ul li div {
+		vertical-align: middle;
 		display: block;
 		overflow: hidden;
 		width: 100%;
+		height: 100%;
+		transition: all 200ms ease;
+	}
+
+	.accordion ul li div * * {
+		margin: 0;
+		width: 100%;
+		-webkit-transform: translateX(-20px);
+		transform: translateX(-20px);
+		-webkit-transition: all 400ms ease;
+		transition: all 400ms ease;
+		opacity: 0;
 	}
 
 	.accordion ul li div a {
 		display: block;
-		height: 350px;
+		/*height: 350px;*/
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		vertical-align: bottom;
+		vertical-align: middle;
 		padding: 15px 20px;
 		box-sizing: border-box;
 		color: #fff;
 		text-decoration: none;
 		font-family: Open Sans, sans-serif;
-		transition: all 200ms ease;
 	}
 
 	.accordion ul li div a * {
-		opacity: 0;
-		margin: 0;
-		width: 100%;
 		text-overflow: ellipsis;
 		position: relative;
 		z-index: 5;
 		white-space: nowrap;
 		overflow: hidden;
-		-webkit-transform: translateX(-20px);
-		transform: translateX(-20px);
-		-webkit-transition: all 400ms ease;
-		transition: all 400ms ease;
 	}
 
 	.accordion ul li div a h2 {
@@ -93,9 +98,9 @@
 
 	.accordion ul:hover li:hover { width: 60%; }
 
-	.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+	.accordion ul:hover li:hover div { background: rgba(0, 0, 0, 0.4); }
 
-	.accordion ul:hover li:hover a * {
+	.accordion ul:hover li:hover div * {
 	opacity: 1;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
