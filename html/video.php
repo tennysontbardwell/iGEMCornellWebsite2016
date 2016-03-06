@@ -1,5 +1,4 @@
-<div align="center" class="embed-responsive embed-responsive-16by9">
-  <video autoplay loop class="embed-responsive-item">
-      <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
-  </video>
+<div align="center" class="row embed-responsive embed-responsive-16by9">
+	<iframe src="https://www.youtube.com/embed/zq_KKnycgs8?autoplay=1" frameborder="0" allowfullscreen>
+	</iframe>
 </div>

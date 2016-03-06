@@ -30,6 +30,7 @@
 	<link rel="stylesheet" href="css/subteams.css?<?php bustCache()?>">
 	<link rel="stylesheet" href="css/team.css?<?php bustCache()?>">
 	<link rel="stylesheet" href="css/video.css?<?php bustCache()?>">
+	<?php require("html/accordion.php") ?>
 	<title>Cornell iGEM</title>
 </head>
 <body>
@@ -48,7 +49,7 @@
 			<?php require("html/achievements.php"); ?>
 			<?php require("html/subteams.php"); ?>
 			<?php require("html/team.php"); ?>
-			<?php require("html/sponsors.php"); ?>		
+			<?php require("html/sponsors.php"); ?>
 		</div>
 	</div>
 	<!-- Footer Section -->
