@@ -4,18 +4,42 @@
 	<meta charset="UTF-8"
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- For devleopment, bust cache -->
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<?php 
+		function bustCache() {
+			echo time();
+		}
+	?>
+	<!-- End development -->
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/aboutigem.css">
-	<link rel="stylesheet" href="css/achievements.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/navbar.css">
-	<link rel="stylesheet" href="css/projects.css">
-	<link rel="stylesheet" href="css/sponsors.css">
-	<link rel="stylesheet" href="css/subteams.css">
-	<link rel="stylesheet" href="css/team.css">
-	<link rel="stylesheet" href="css/video.css">
+	<link rel="stylesheet" href="css/styles.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/aboutigem.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/achievements.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/footer.css?<?php bustCache() ?>">
+	<link rel="stylesheet" href="css/header.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/navbar.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/projects.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/sponsors.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/subteams.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/team.css?<?php
+		bustCache()?>">
+	<link rel="stylesheet" href="css/video.css?<?php
+		bustCache()?>">
 	<title>Cornell iGEM</title>
 </head>
 <body>
