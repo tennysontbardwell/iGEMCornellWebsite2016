@@ -16,7 +16,10 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#aboutigem">About iGEM<span class="sr-only">(current)</span></a></li>
 				<li><a href="#projects">Projects</a></li>
+				<li><a href="#achievements">Achievements</a></li>
+				<li><a href="#subteams">Sub Teams</a></li>
 				<li><a href="#team">Team Members</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 			</ul>

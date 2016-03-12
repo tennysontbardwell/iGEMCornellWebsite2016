@@ -6,14 +6,38 @@
 		</section>
 	</div>
 	<div class="container">
+<!-- 		<div data-toggle="collapse" data-target="#test">
+			<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 team-member'>
+				<img class='img-responsive' src='resources/placeholders/team-members-md/Arun.jpg'>
+			</div>
+		</div>
+		<div id="test" class="collapse col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1> hello!!!! hello!!!! hello!!!! hello!!!! hello!!!! </h1>
+		</div> -->
 		<?php
 			$files = glob('resources/placeholders/team-members-md/*.{jpg,jpeg,png,gif}', GLOB_BRACE);
-			// $files = scandir('resources/placeholders/team_members/');
+			function makeBio($num){
+				echo
+					"<div id='test$num' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+						<h1> hello!!!! hello!!!! hello!!!! hello!!!! hello!!!! </h1>
+					</div>";
+			}
+			$x = 0;			
 			foreach($files as $file) {
-				echo 
-					"<section class='col-md-2 col-lg-2 col-sm-3 col-xs-4'>
-						<img class='img-responsive' src='$file'>
-					</section>";
+				$y = floor($x / 6);
+				echo
+					"<div data-toggle='collapse' data-target='#test$y'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 team-member'>
+							<img class='img-responsive' src=$file>
+						</div>
+					</div>";
+				if ($x % 6 == 5) {
+					makeBio($y);
+				}
+				$x = $x + 1;
+			}
+			if ($x % 6 != 5) {
+				makeBio($y);
 			}
 		?>
 	</div>
