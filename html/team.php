@@ -3,30 +3,34 @@
 	<div class="container">
 		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 			<h1>Our Team</h1>
-		</section>
+<!-- 			<button type="button" class="btn btn-default" onclick="collapseAllBut()">
+				Click
+			</button>
+ -->		
+ 		</section>
 	</div>
 	<div class="container">
-<!-- 		<div data-toggle="collapse" data-target="#test">
+<!-- 		<div data-toggle="collapse" data-target="#bio">
 			<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 team-member'>
 				<img class='img-responsive' src='resources/placeholders/team-members-md/Arun.jpg'>
 			</div>
 		</div>
-		<div id="test" class="collapse col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div id="bio" class="collapse col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<h1> hello!!!! hello!!!! hello!!!! hello!!!! hello!!!! </h1>
 		</div> -->
 		<?php
 			$files = glob('resources/placeholders/team-members-md/*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 			function makeBio($num){
 				echo
-					"<div id='test$num' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+					"<div id='bio$num' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12'>
 						<h1> hello!!!! hello!!!! hello!!!! hello!!!! hello!!!! </h1>
 					</div>";
 			}
-			$x = 0;			
+			$x = 0;
 			foreach($files as $file) {
 				$y = floor($x / 6);
 				echo
-					"<div data-toggle='collapse' data-target='#test$y'>
+					"<div onclick='collapseAllBut($y)'>
 						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 team-member'>
 							<img class='img-responsive' src=$file>
 						</div>
