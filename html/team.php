@@ -30,9 +30,9 @@
 			foreach($files as $file) {
 				$y = floor($x / 6);
 				echo
-					"<div onclick='collapseAllBut($y)'>
+					"<div onclick='collapseAllBut($x)'>
 						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 team-member'>
-							<img class='img-responsive' src=$file>
+							<img id='photo$x' class='img-responsive' src=$file>
 						</div>
 					</div>";
 				if ($x % 6 == 5) {
