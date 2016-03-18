@@ -8,7 +8,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Brand</a>
+			<img class="logo" href="#" src="resources/logo/CornelliGEMLogo.jpg">
+			<img class="logo-sup rotate" src="resources/logo/IGEMsmall.png">
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
