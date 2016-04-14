@@ -18,7 +18,7 @@
 
 	.accordion ul li {
 		display: table-cell;
-		vertical-align: middle;
+		vertical-align: bottom;
 		position: relative;
 		width: 16.666%;
 		height: 350px;
@@ -28,44 +28,39 @@
 	}
 
 	.accordion ul li div {
-		vertical-align: middle;
 		display: block;
 		overflow: hidden;
 		width: 100%;
-		height: 100%;
-		transition: all 200ms ease;
-	}
-
-	.accordion ul li div * * {
-		margin: 0;
-		width: 100%;
-		-webkit-transform: translateX(-20px);
-		transform: translateX(-20px);
-		-webkit-transition: all 400ms ease;
-		transition: all 400ms ease;
-		opacity: 0;
 	}
 
 	.accordion ul li div a {
 		display: block;
-		/*height: 350px;*/
+		height: 350px;
 		width: 100%;
 		position: relative;
 		z-index: 3;
-		vertical-align: middle;
+		vertical-align: bottom;
 		padding: 15px 20px;
 		box-sizing: border-box;
 		color: #fff;
 		text-decoration: none;
 		font-family: Open Sans, sans-serif;
+		transition: all 200ms ease;
 	}
 
 	.accordion ul li div a * {
+		opacity: 0;
+		margin: 0;
+		width: 100%;
 		text-overflow: ellipsis;
 		position: relative;
 		z-index: 5;
 		white-space: nowrap;
 		overflow: hidden;
+		-webkit-transform: translateX(-20px);
+		transform: translateX(-20px);
+		-webkit-transition: all 400ms ease;
+		transition: all 400ms ease;
 	}
 
 	.accordion ul li div a h2 {
@@ -82,13 +77,13 @@
 		font-size: 13.5px;
 	}
 
-	.accordion ul li:nth-child(1) { background-image: url("resources/placeholders/fishpharm-image.png") }
+	.accordion ul li:nth-child(1) { background-image: url("resources/projects/fishpharm.JPG") }
 
-	.accordion ul li:nth-child(2) { background-image: url("resources/placeholders/cornell-bridge.jpg"); }
+	.accordion ul li:nth-child(2) { background-image: url("resources/projects/inriver.png"); }
 
-	.accordion ul li:nth-child(3) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
+	.accordion ul li:nth-child(3) { background-image: url("resources/projects/organofoam.png"); }
 
-	.accordion ul li:nth-child(4) { background-image: url("resources/placeholders/dog.jpg"); }
+	.accordion ul li:nth-child(4) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
 
 	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
 
@@ -98,9 +93,9 @@
 
 	.accordion ul:hover li:hover { width: 60%; }
 
-	.accordion ul:hover li:hover div { background: rgba(0, 0, 0, 0.4); }
+	.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
 
-	.accordion ul:hover li:hover div * {
+	.accordion ul:hover li:hover a * {
 	opacity: 1;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
@@ -124,4 +119,4 @@
 		}
 	}
 </style>
-<!-- <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css"> -->
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
