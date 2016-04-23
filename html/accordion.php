@@ -77,11 +77,11 @@
 		font-size: 13.5px;
 	}
 
-	.accordion ul li:nth-child(1) { background-image: url("resources/projects/fishpharm.JPG") }
+	.accordion ul li:nth-child(1) { background-image: url("resources/projects/fishpharm350.jpg") }
 
-	.accordion ul li:nth-child(2) { background-image: url("resources/projects/inriver.png"); }
+	.accordion ul li:nth-child(2) { background-image: url("resources/projects/inriver350.jpg"); }
 
-	.accordion ul li:nth-child(3) { background-image: url("resources/projects/organofoam.png"); }
+	.accordion ul li:nth-child(3) { background-image: url("resources/projects/organofoam350.jpg"); }
 
 	.accordion ul li:nth-child(4) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
 
