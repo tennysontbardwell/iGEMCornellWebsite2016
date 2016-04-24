@@ -24,6 +24,10 @@
 				<li><a onclick="scrollToElem('sponsors')">Sponsors</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="https://www.facebook.com/cornelligem" class="pull-left"><img src="resources/social-media/facebook.png" height="28" style="max-width:100px; margin-top: -2px;"></a>
+					<a href="https://twitter.com/CUGEM" class="pull-left "><img src="resources/social-media/twitter.png" height="28" style="max-width:100px; margin-top: -2px; margin-left: -22px;"></a>
+				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
