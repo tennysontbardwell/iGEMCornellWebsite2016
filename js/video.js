@@ -7,7 +7,7 @@ function videoScrollCheck(){
 	if(!didPause){
 		if (!checkVisible($('#video-bottom'),'visible') 
 			&& checkVisible($('#video-bottom'),'above')){
-			pauseVideo();	
+			pauseVideo();
 		}
 	}
 }

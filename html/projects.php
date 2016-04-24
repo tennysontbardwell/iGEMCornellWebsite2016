@@ -1,4 +1,4 @@
-<a name="projects" class="anchor"></a>
+<a name="projects" id="projects" class="anchor"></a>
 <div class="major-section">
 	<div class="container">
 		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">

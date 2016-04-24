@@ -1,4 +1,4 @@
-<a name="subteams" class="anchor"></a>
+<a name="subteams" id="subteams" class="anchor"></a>
 <div class="major-section">
 	<div class="container">
 		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
@@ -13,24 +13,29 @@
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="resources/placeholders/Mold_contaminantssmaller.png" alt="Chania">
+      <img class="img-responsive center-block" src="resources/subteams/business800x350.jpg" alt="business">
     </div>
 
     <div class="item">
-      <img src="resources/placeholders/cornell-bridge.jpg" alt="Chania">
+      <img class="img-responsive center-block" src="resources/subteams/cs800x350.jpg" alt="cs">
     </div>
 
     <div class="item">
-      <img src="resources/placeholders/fishpharm-image.png" alt="Flower">
+      <img class="img-responsive center-block" src="resources/subteams/wetlab800x350.jpg" alt="wetlab">
     </div>
 
     <div class="item">
-      <img src="img_flower2.jpg" alt="Flower">
+      <img class="img-responsive center-block" src="resources/subteams/drylab800x350.jpg" alt="drylab">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="resources/subteams/outreach800x350.jpg" alt="outreach">
     </div>
   </div>
 

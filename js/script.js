@@ -7,6 +7,12 @@ window.onscroll = function(){
 	videoScrollCheck();
 }
 
+function scrollToElem(elemID){
+    $('html, body').animate({
+    scrollTop: $("#"+elemID).offset().top
+    }, 400);
+}
+
 // https://stackoverflow.com/questions/5353934/check-if-element-is-visible-on-screen
 function checkVisible( elm, evalType ) {
     evalType = evalType || "visible";

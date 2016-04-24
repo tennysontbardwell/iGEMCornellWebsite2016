@@ -15,12 +15,13 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#aboutigem">About iGEM<span class="sr-only">(current)</span></a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#achievements">Achievements</a></li>
-				<li><a href="#subteams">Sub Teams</a></li>
-				<li><a href="#team">Team Members</a></li>
-				<li><a href="#sponsors">Sponsors</a></li>
+				<li><a onclick="scrollToElem('aboutigem')">About iGEM</a></li>
+				<li><a onclick="scrollToElem('projects')">Projects</a></li>
+				<li><a onclick="scrollToElem('achievements')">Achievements</a></li>
+				<li><a onclick="scrollToElem('subteams')">Sub Teams</a></li>
+				<li><a onclick="scrollToElem('team')">Team Members</a></li>
+				<li><a onclick="scrollToElem('recruiting')">Recruiting</a></li>
+				<li><a onclick="scrollToElem('sponsors')">Sponsors</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 			</ul>

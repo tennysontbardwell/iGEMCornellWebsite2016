@@ -1,4 +1,4 @@
-<a name="team" class="anchor"></a>
+<a name="team" id="team" class="anchor"></a>
 <script>
 function getHTMLStringForBio(bioNum){
 	<?php 

@@ -1,4 +1,4 @@
-<a name="achievements" class="anchor"></a>
+<a name="achievements" id="achievements" class="anchor"></a>
 <div class="major-section">
 	<div class="container">
 		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">

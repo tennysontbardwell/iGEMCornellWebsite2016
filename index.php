@@ -35,8 +35,6 @@
 	<title>Cornell iGEM</title>
 </head>
 <body>
-	<!-- Header Section -->
-	<?php //require("html/header.html"); ?>
 	<!-- Navagation Bar -->
 	<?php require("html/navbar.php"); ?>
 	<!-- Video Section -->
@@ -48,8 +46,9 @@
 			<?php require("html/aboutigem.php"); ?>
 			<?php require("html/projects.php"); ?>
 			<?php require("html/achievements.php"); ?>
-			<?php //require("html/subteams.php"); ?>
+			<?php require("html/subteams.php"); ?>
 			<?php require("html/team.php"); ?>
+			<?php require("html/recruiting.php"); ?>
 			<?php require("html/sponsors.php"); ?>
 		</div>
 	</div>
@@ -59,7 +58,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="http://www.youtube.com/iframe_api"></script>
-	<script src="js/smoothscroll.js<?php bustCache()?>"></script>
+	<!--<script src="js/smoothscroll.js<?php bustCache()?>"></script>-->
 	<script src="js/script.js<?php bustCache()?>"></script>
 </body>
 </html
