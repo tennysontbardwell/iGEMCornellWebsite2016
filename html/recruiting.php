@@ -6,10 +6,10 @@
 	<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 		<big>
 			<p>
-				We're looking for excited students to push forth the field of synthetic biology. Our team is made of students of every year, of every college, of every major. From gene-splicing in wet lab to business outreach, bright passionate students make this team work.
+				We're looking for excited students to push forth the field of synthetic biology. Our team is made of students from every year, every college, and every major. From gene-splicing in wet lab to pursuing business endeavors to organizing outreach events, bright passionate students make this team thrive.
 			</p>
 			<p>
-				Normally new team members apply in early January and start in the spring semester:
+				Potential new team members apply in early January and join the team in the spring semester:
 			</p>
 			<p>
 				<lu>
