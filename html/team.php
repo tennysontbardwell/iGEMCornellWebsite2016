@@ -2,7 +2,7 @@
 <script>
 function getHTMLStringForBio(bioNum){
 	<?php 
-		$path = 'resources/placeholders/team-member-bios/';
+		$path = 'resources/team-members/team-member-bios/';
 		$files = glob("$path*.{html}", GLOB_BRACE);
 		$x = 0;
 		foreach($files as $file) {
@@ -29,7 +29,7 @@ function getHTMLStringForBio(bioNum){
 	</div>
 	<div class="container">
 		<?php
-			$files = glob('resources/placeholders/team-members-md/*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+			$files = glob('resources/team-members/team-members-md/*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 			function makeBio($num){
 				echo
 					"<div id='bio$num' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12 bio-section'>
