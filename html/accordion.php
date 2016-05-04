@@ -55,7 +55,7 @@
 		text-overflow: ellipsis;
 		position: relative;
 		z-index: 5;
-		white-space: nowrap;
+		/*white-space: nowrap;*/
 		overflow: hidden;
 		-webkit-transform: translateX(-20px);
 		transform: translateX(-20px);
@@ -79,21 +79,21 @@
 
 	.accordion ul li:nth-child(1) { background-image: url("resources/projects/fishpharm350.jpg") }
 
-	.accordion ul li:nth-child(2) { background-image: url("resources/projects/inriver350.jpg"); }
+	.accordion ul li:nth-child(2) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
 
 	.accordion ul li:nth-child(3) { background-image: url("resources/projects/organofoam350x800.jpg"); }
 
-	.accordion ul li:nth-child(4) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
+	.accordion ul li:nth-child(4) { background-image: url("resources/projects/inriver350.jpg"); }
 
-	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
+/*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
 
 	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }
-
+*/
 	.accordion ul:hover li { width: 8%; }
 
 	.accordion ul:hover li:hover { width: 60%; }
 
-	.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+	.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.6); }
 
 	.accordion ul:hover li:hover a * {
 	opacity: 1;
