@@ -16,7 +16,7 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a onclick="scrollToElem('aboutigem')">About iGEM</a></li>
-				<li><a onclick="scrollToElem('projects')">Projects</a></li>
+				<li><a onclick="scrollToElem('aboutus')">About Us</a></li>
 				<li><a onclick="scrollToElem('achievements')">Achievements</a></li>
 				<li><a onclick="scrollToElem('subteams')">Sub Teams</a></li>
 				<li><a onclick="scrollToElem('team')">Team Members</a></li>

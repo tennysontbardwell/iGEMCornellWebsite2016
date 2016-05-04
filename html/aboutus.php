@@ -1,11 +1,16 @@
-<a name="projects" id="projects" class="anchor"></a>
-<div class="major-section">
+<a name="aboutus" id="aboutus" class="anchor"></a>
+<div class="container major-section">
 	<div class="container">
 		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
-			<h1>Past Projects</h1>
+			<h1>About Us</h1>
 		</section>
 	</div>
-</div>
+	<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8" style='margin-bottom: 50px;'>
+		<big>
+			<p>The Cornell iGEM Team is comprised of 40 brilliant and creative undergraduate students motivated to save the world through synthetic biology.  The team is comprised of five subteams: Wet Lab, Product Development, CS/ECE Design, Policy and Practices, and Business.  The team works tirelessly throughout the school year and summer to solve local and global problems related to medical applications, environmental concerns, and human and animal health.</p>
+			<p>Check out the Cornell iGEM Team, 2015 winner of Gold, Best Environmental, Best Business, and Best Applied Design against 280 other international university teams!</p>
+		</big>
+	</section>
 	<div class="accordion">
 		<ul>
 			<li>
@@ -34,7 +39,8 @@
 					<p>We conceived, designed, and constructed a novel biosensor to remotely and continuously monitor arsenic levels in rivers utilizing an electroactive bacterium Shewanella oneidensis that we have genetically modified. This project addressed the lack of a system to continuously monitor water quality in areas affected by oil and gas extraction and is modular as well– the device can be adapted for just about any environment. SAFE BET complements current methods of chemical detection and will pave the way to improved protection of our greatest resource: water.</p>
 				</a> </div>
 			</li>
-	</ul>
+		</ul>
+	</div>
 </div>
 <div class="row">
 </div>
