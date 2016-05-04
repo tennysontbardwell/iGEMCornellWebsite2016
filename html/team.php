@@ -40,8 +40,12 @@ function getHTMLStringForBio(bioNum){
 				$y = floor($x / 6);
 				echo
 					"<div onclick='collapseAllBut($x)'>
-						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 team-member'>
-							<img id='photo$x' class='img-responsive' src=$file>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo$x' class='img-responsive team-member-photo' src=$file>
+							</div>
 						</div>
 					</div>";
 				if ($x % 6 == 5) {

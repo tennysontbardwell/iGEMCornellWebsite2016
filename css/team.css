@@ -10,6 +10,26 @@
 	padding: 15px;
 	background-color: #f2f2f2;
 }
+
+.team-member{
+}
+
+.team-member-photo{
+}
+
+.team-member-mouseover-box{
+	bottom:0;
+    top:0;
+    left:15px;
+    right:15px;
+	position: absolute;
+	-webkit-transition: all 250ms ease;
+}
+
+.team-member-mouseover-box:hover{
+	background: rgba(0,0,0,.4);
+}
+
 .selected-team-member{
 	border:thick solid #8c8c8c;
 }
