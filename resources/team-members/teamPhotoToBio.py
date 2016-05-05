@@ -26,14 +26,11 @@ class BioList:
             m2 = re.search(r'(.+)\.[^\.]+$',b)
             if m1 is not None:
                 if m1.group(1) == bioName:
-                    print(m1.group(1)+"28")
                     foundit = True
             if m2 is not None:
                 if m2.group(1) == bioName:
-                    print(m2.group(1)+"32")
                     foundit = True
             if foundit:
-                print(b+"33")#TODO
                 self.unaccounted.remove(b);
                 self.accounted.append(b);
                 break;
@@ -54,7 +51,6 @@ if __name__ == '__main__':
             continue;
         pName = m.group(1)
         bios.accountFor(pName);
-        print(pName+"54")#TODO
     #now deal with the bios to add and to mark for removal
     for b in bios.unaccounted:
         if b.find(".") == 0:
