@@ -1,3 +1,4 @@
+#!/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
 import sys
 from os import listdir,rename
 import re
@@ -21,21 +22,28 @@ class BioList:
         #add.
         foundit = False;
         for b in self.unaccounted:
-            m = re.search(r'(.+)\.[^\.]+', b)
-            if m == None:
-                continue
-            if m.group(1) == bioName:
+            m1 = re.search(r'(.+)\.NEW\.[^\.]+$',b)
+            m2 = re.search(r'(.+)\.[^\.]+$',b)
+            if m1 is not None:
+                if m1.group(1) == bioName:
+                    print(m1.group(1)+"28")
+                    foundit = True
+            if m2 is not None:
+                if m2.group(1) == bioName:
+                    print(m2.group(1)+"32")
+                    foundit = True
+            if foundit:
+                print(b+"33")#TODO
                 self.unaccounted.remove(b);
                 self.accounted.append(b);
-                foundit=True;
                 break;
         if not foundit:
             self.toAdd.append(bioName+".NEW.html");
         
 if __name__ == '__main__':
     if len(sys.argv) == 1:
-        print 'Please passe in the folder location where '+photoFolder+\
-        ' and '+bioFolder+' are located';
+        print('Please pass in the folder location where '+photoFolder+\
+        ' and '+bioFolder+' are located');
         sys.exit(-1);
     photos = listdir(sys.argv[1] + photoFolder);
     bios = BioList();
@@ -46,26 +54,27 @@ if __name__ == '__main__':
             continue;
         pName = m.group(1)
         bios.accountFor(pName);
+        print(pName+"54")#TODO
     #now deal with the bios to add and to mark for removal
-    for b in bios.toAdd:
-        path = sys.argv[1]+bioFolder+"/"+b;
-        open(path,'a');
-        print "Added a needed bio: "+b;
-        newAdded += 1;
     for b in bios.unaccounted:
         if b.find(".") == 0:
             continue;
         if b[-4:] != ".OLD":
             path = sys.argv[1]+bioFolder+"/";
-            print "Found bio without photo: "+b;
+            print("Found bio without photo: "+b);
             oldFound += 1;
             rename(path+b, path+b+".OLD");
+    for b in bios.toAdd:
+        path = sys.argv[1]+bioFolder+"/"+b;
+        open(path,'a');
+        print("Added a needed bio: "+b);
+        newAdded += 1;
     #prints finally summary
-    print "****************************"
-    print "Looked in "+sys.argv[1] + photoFolder
-    print str(len(p)) + " images searched"
-    print "Added " + str(newAdded) + " new bios."
-    print "Found " + str(oldFound) + " unneeded bios."
+    print("****************************")
+    print("Looked in "+sys.argv[1] + photoFolder)
+    print(str(len(photos)) + " files searched")
+    print("Added " + str(newAdded) + " new bios.")
+    print("Found " + str(oldFound) + " unneeded bios.")
 
 
 
