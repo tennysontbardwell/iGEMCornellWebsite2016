@@ -61,4 +61,4 @@
 	<!--<script src="js/smoothscroll.js<?php bustCache()?>"></script>-->
 	<script src="js/script.js<?php bustCache()?>"></script>
 </body>
-</html
+</html>
