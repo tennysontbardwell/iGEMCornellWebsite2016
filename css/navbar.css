@@ -1,7 +1,9 @@
 .logo{
 	/*background-image: "resources/logo/CornelliGEMLogo.jpg";*/
 	height: 50px;
-	border: thick solid #cccccc;
+    /*margin-left: -10px;*/
+    margin-top: 3px;
+	border: solid #cccccc;
 }
 
 .logo-sup{

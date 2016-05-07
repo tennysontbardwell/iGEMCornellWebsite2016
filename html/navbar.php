@@ -9,7 +9,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<img class="logo" href="#" src="resources/logo/CornelliGEMLogo.jpg">
-			<img class="logo-sup rotate" src="resources/logo/IGEMsmall.png">
+			<img class="logo-sup rotate" src="resources/logo/IGEMsmall34px.png">
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
