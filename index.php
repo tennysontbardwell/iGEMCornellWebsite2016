@@ -42,7 +42,7 @@
 	<!-- Various Sections -->
 	<?php require("html/aboutigem.php"); ?>
 	<?php require("html/aboutus.php"); ?>
-	<?php require("html/achievements.php"); ?>
+	<?php //require("html/achievements.php"); ?>
 	<?php require("html/subteams.php"); ?>
 	<?php require("html/team.php"); ?>
 	<?php require("html/recruiting.php"); ?>
