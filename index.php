@@ -24,7 +24,6 @@
 	<link rel="stylesheet" href="css/aboutigem.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/achievements.css?<?php bustCache()?>">
 	<link rel="stylesheet" href="css/footer.css<?php bustCache() ?>">
-	<link rel="stylesheet" href="css/header.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/navbar.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/projects.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/sponsors.css<?php bustCache()?>">
@@ -40,18 +39,15 @@
 	<!-- Video Section -->
 	<?php require("html/video.php"); ?>
 
-	<div class="container-fluid">
-		<div class="row">
-			<!-- Various Sections -->
-			<?php require("html/aboutigem.php"); ?>
-			<?php require("html/aboutus.php"); ?>
-			<?php require("html/achievements.php"); ?>
-			<?php require("html/subteams.php"); ?>
-			<?php require("html/team.php"); ?>
-			<?php require("html/recruiting.php"); ?>
-			<?php require("html/sponsors.php"); ?>
-		</div>
-	</div>
+	<!-- Various Sections -->
+	<?php require("html/aboutigem.php"); ?>
+	<?php require("html/aboutus.php"); ?>
+	<?php require("html/achievements.php"); ?>
+	<?php require("html/subteams.php"); ?>
+	<?php require("html/team.php"); ?>
+	<?php require("html/recruiting.php"); ?>
+	<?php require("html/sponsors.php"); ?>
+
 	<!-- Footer Section -->
 	<?php require("html/footer.php"); ?>
 
