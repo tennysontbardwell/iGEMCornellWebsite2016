@@ -1,6 +1,16 @@
 .subteam-blerb{
-	max-width: 600px;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 220px;
+}
+
+.carousel-control.left{
+	background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	margin-bottom: 240px;
+}
+
+.carousel-control.right{
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	margin-bottom: 240px;
 }
