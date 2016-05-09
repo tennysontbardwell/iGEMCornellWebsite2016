@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8"
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- For devleopment, bust cache -->
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+		<!-- End development -->
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css?1462408969">
+	<link rel="stylesheet" href="css/aboutigem.css?1462408969">
+	<link rel="stylesheet" href="css/achievements.css??1462408969">
+	<link rel="stylesheet" href="css/footer.css?1462408969">
+	<link rel="stylesheet" href="css/header.css?1462408969">
+	<link rel="stylesheet" href="css/navbar.css?1462408969">
+	<link rel="stylesheet" href="css/projects.css?1462408969">
+	<link rel="stylesheet" href="css/sponsors.css?1462408969">
+	<link rel="stylesheet" href="css/subteams.css?1462408969">
+	<link rel="stylesheet" href="css/team.css?1462408969">
+	<link rel="stylesheet" href="css/video.css?1462408969">
+	<!-- http://www.cssscript.com/demo/pure-css-responsive-horizontal-accordion/ -->
+<style class="cp-pen-styles">
+	.accordion {
+		width: 100%;
+		max-width: 1080px;
+		height: 350px;
+		overflow: hidden;
+		margin: 50px auto;
+	}
+
+	.accordion ul {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+		margin: 0;
+		padding: 0;
+	}
+
+	.accordion ul li {
+		display: table-cell;
+		vertical-align: bottom;
+		position: relative;
+		width: 16.666%;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		transition: all 500ms ease;
+	}
+
+	.accordion ul li div {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.accordion ul li div a {
+		display: block;
+		height: 350px;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		vertical-align: bottom;
+		padding: 15px 20px;
+		box-sizing: border-box;
+		color: #fff;
+		text-decoration: none;
+		font-family: Open Sans, sans-serif;
+		transition: all 200ms ease;
+	}
+
+	.accordion ul li div a * {
+		opacity: 0;
+		margin: 0;
+		width: 100%;
+		text-overflow: ellipsis;
+		position: relative;
+		z-index: 5;
+		/*white-space: nowrap;*/
+		overflow: hidden;
+		-webkit-transform: translateX(-20px);
+		transform: translateX(-20px);
+		-webkit-transition: all 400ms ease;
+		transition: all 400ms ease;
+	}
+
+	.accordion ul li div a h2 {
+		font-family: Montserrat, sans-serif;
+		text-overflow: clip;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+		top: 160px;
+	}
+
+	.accordion ul li div a p {
+		top: 160px;
+		font-size: 13.5px;
+	}
+
+	.accordion ul li:nth-child(1) { background-image: url("resources/projects/fishpharm350.jpg") }
+
+	.accordion ul li:nth-child(2) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
+
+	.accordion ul li:nth-child(3) { background-image: url("resources/projects/organofoam350x800.jpg"); }
+
+	.accordion ul li:nth-child(4) { background-image: url("resources/projects/inriver350.jpg"); }
+
+/*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
+
+	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }
+*/
+	.accordion ul:hover li { width: 8%; }
+
+	.accordion ul:hover li:hover { width: 60%; }
+
+	.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.6); }
+
+	.accordion ul:hover li:hover a * {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	@media screen and (max-width: 600px) {
+
+		body { margin: 0; }
+
+		.accordion { height: auto; }
+
+		.accordion ul li,
+		.accordion ul li:hover,
+		.accordion ul:hover li,
+		.accordion ul:hover li:hover {
+			position: relative;
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			-webkit-transition: none;
+			transition: none;
+		}
+	}
+</style>
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">	<title>Cornell iGEM</title>
+</head>
+<body>
+	<!-- Navagation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<img class="logo" href="#" src="resources/logo/CornelliGEMLogo.jpg">
+			<img class="logo-sup rotate" src="resources/logo/IGEMsmall.png">
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a onclick="scrollToElem('aboutigem')">About iGEM</a></li>
+				<li><a onclick="scrollToElem('aboutus')">About Us</a></li>
+				<li><a onclick="scrollToElem('achievements')">Achievements</a></li>
+				<li><a onclick="scrollToElem('subteams')">Sub Teams</a></li>
+				<li><a onclick="scrollToElem('team')">Team Members</a></li>
+				<li><a onclick="scrollToElem('recruiting')">Recruiting</a></li>
+				<li><a onclick="scrollToElem('sponsors')">Sponsors</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="https://www.facebook.com/cornelligem" class="pull-left"><img src="resources/social-media/facebook.png" height="28" style="max-width:100px; margin-top: -2px;"></a>
+					<a href="https://twitter.com/CUGEM" class="pull-left "><img src="resources/social-media/twitter.png" height="28" style="max-width:100px; margin-top: -2px; margin-left: -22px;"></a>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<div style="height:50px"></div>	<!-- Video Section -->
+	<div id="video-wrapper" align="center" class="row embed-responsive embed-responsive-16by9">
+	<iframe id="video-iframe" src="https://www.youtube.com/embed/zq_KKnycgs8?autoplay=1;enablejsapi=1;rel=0" frameborder="0" allowfullscreen>
+	</iframe>
+	<!-- <div id="player"></div>
+	<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          // height: '390',
+          // width: '640',
+          videoId: 'zq_KKnycgs8',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script> -->
+</div>
+<div id="video-bottom"></div>
+<script src="js/video.js?1462408969"></script>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Various Sections -->
+			<a name="aboutigem" id="aboutigem" class="anchor"></a>
+<div class="container major-section">
+	<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+		<h1>About iGEM</h1>
+	</section>
+	<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+		<big>
+			<p>
+				The <a href="http://igem.org/Main_Page">International Genetically Engineered Machine</a> (iGEM) Foundation is an independent, non-profit organization dedicated to education and competition, the advancement of synthetic biology, and the development of an open community and collaboration.
+			</p>
+			<p>
+				The <a href="http://igem.org/Competition">iGEM World Jamboree</a> is an annual, world wide, synthetic biology event aimed at undergraduate university students, as well as high school and graduate students. 280 multidisciplinary teams from all around the world work throughout the summer to build genetically engineered systems using <a href="http://parts.igem.org/Help:Parts">standard biological parts</a> called BioBricks. iGEM teams work inside and outside the lab, creating sophisticated projects that strive to create a positive contribution to their communities and the world.
+			</p>
+		</big>
+	</section>
+</div>			<a name="aboutus" id="aboutus" class="anchor"></a>
+<div class="container major-section">
+	<div class="container">
+		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+			<h1>About Us</h1>
+		</section>
+	</div>
+	<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8" style='margin-bottom: 50px;'>
+		<big>
+			<p>The Cornell iGEM Team is comprised of 40 brilliant and creative undergraduate students motivated to save the world through synthetic biology.  The team is comprised of five subteams: Wet Lab, Product Development, CS/ECE Design, Policy and Practices, and Business.  The team works tirelessly throughout the school year and summer to solve local and global problems related to medical applications, environmental concerns, and human and animal health.</p>
+			<p>Check out the Cornell iGEM Team, 2015 winner of Gold, Best Environmental, Best Business, and Best Applied Design against 280 other international university teams!</p>
+		</big>
+	</section>
+	<div class="accordion">
+		<ul>
+			<li>
+				<div>
+					<a href="http://2015.igem.org/Team:Cornell">
+						<h2>fishPharm - 2015</h2>
+						<p>We created a probiotic treatment to the devastating and hard to-treat salmonid Bacterial Coldwater Disease, which is ubiquitous to fresh water and invades fish farms all over the world and in the U.S. We coupled this treatment with the development of a novel fish tag drug delivery device.  Winner of Gold Medal, Best Environmental, Best Business, and Best Applied Design.</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div> <a href="http://2014.igem.org/Team:Cornell">
+					<h2>Lead it Go - 2014</h2>
+					<p>We engineered a novel heavy metal sequestration and filtration system for lead, nickel, and mercury remediation in which we engineered bacterial strains to express heavy metal transport proteins and metallothioneins to bind to the metals in polluted water. Our engineered cells housed in a hollow fiber reactor filtration device to clean lakes and drinking water. Winner of Gold Medal</p>
+				</a> </div>
+			</li>
+			<li>
+				<div> <a href="http://2013.igem.org/Team:Cornell")>
+					<h2>Organofoam - 2013</h2>
+					<p>Working in collaboration with Ecovative Design, we created a biodegradable styrofoam replacement from mushrooms, an alternative type of packaging now being used by large companies like IKEA . We hope to develop a toolkit for genetically modifying basidiomycetes like G. lucidum so that other iGEM teams and companies like Ecovative Design will be able to approach genetic modification of higher-order fungi more easily.</p>
+				</a> </div>
+			</li>
+			<li>
+				<div> <a href="http://2012.igem.org/Team:Cornell")>
+					<h2>Safe Bet - 2012</h2>
+					<p>We conceived, designed, and constructed a novel biosensor to remotely and continuously monitor arsenic levels in rivers utilizing an electroactive bacterium Shewanella oneidensis that we have genetically modified. This project addressed the lack of a system to continuously monitor water quality in areas affected by oil and gas extraction and is modular as well– the device can be adapted for just about any environment. SAFE BET complements current methods of chemical detection and will pave the way to improved protection of our greatest resource: water.</p>
+				</a> </div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+</div>			<a name="achievements" id="achievements" class="anchor"></a>
+<div class="major-section">
+	<div class="container">
+		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+			<h1>Achievements</h1>
+		</section>
+	</div>
+</div>
+<div class='container'>
+	<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+		<div class='circle'></div>
+	</div>
+</div>			<a name="subteams" id="subteams" class="anchor"></a>
+<div class="major-section">
+	<div class="container">
+		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+			<h1>Sub Teams</h1>
+		</section>
+	</div>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive center-block" src="resources/subteams/business800x350.jpg" alt="business">
+      <div class='subteam-blerb'>
+        <h2>Business</h2>
+        <p>The business subteam has two primary roles within Cornell iGEM. First, we establish partnerships and sponsorship with many outside organizations to ensure that the project is financially viable. Second, each year we evaluate the marketability of our project and consider applications of our project to improve existing industry. Our coordination with sponsors and development of business models for Cornell iGEM positions us as the fiscal backbone of the team, helping to bring the team’s project ideas to reality.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="resources/subteams/cs800x350.jpg" alt="cs">
+      <div class='subteam-blerb'>
+        <h2>Computer Science/Electrical and Computer Engineering</h2>
+        <p>The CS/ECE Design Team operates at the fusion of synthetic biology and technology.  The team works closely with Product Development in the research and design phases and spearheads all the coding and electrical engineering components of the dry lab product that take our project to the next level.  This includes developing smartphone apps, environmental monitoring systems, and biosensor technology.  In addition, the CS/ECE Design Team creates the competition wiki page and sponsorship video.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="resources/subteams/wetlab800x350.jpg" alt="wetlab">
+      <div class='subteam-blerb'>
+        <h2>Wet Lab</h2>
+        <p>The wet lab subteam integrates myriad ideas and subjects them to rigorous testing and analysis. Using the most advanced techniques in molecular biology and biochemistry, we design novel experiments to purify our therapeutics, to assess their efficacy, and to test their stability. We are committed to making contributions to synthetic biology through the heterologous expression and the characterization of proteins that remain poorly understood.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="resources/subteams/drylab800x350.jpg" alt="drylab">
+      <div class='subteam-blerb'>
+        <h2>Product Development</h2>
+        <p>The product development subteam is an end-to-end product development team that is user centered and engineering focused, with the end goal of bringing Cornell iGEM's biological engineering technology to the real world. We apply design thinking and various engineering disciplines to explore user needs, generate a problem statement, design and prototype a mechanical solution to the problem, and create product specifications and prepare for manufacture.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="resources/subteams/outreach800x350.jpg" alt="outreach">
+      <div class='subteam-blerb'>
+        <h2>Policy and Practices</h2>
+        <p>The Policy and Practices subteam contextualizes Cornell iGEM's genetic engineering projects and examines its impact through community engagement and collaborations. The subteam coordinates outreach events such as youth mentorship programs, forums, and expos. Policy and Practices also analyzes policies, and connects those who are familiar and unfamiliar to our project. Through interviews with field experts and interactions with the public, we are reminded that the people we meet always have stories to tell. We aim to share our story with them, too.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>			<a name="team" id="team" class="anchor"></a>
+<script>
+function getHTMLStringForBio(bioNum){
+	if (bioNum == 0) { return "<h2>Saie Ganoo | Team Lead<\/h2>\n<p>Can anyone say no to Saie? Hailing from Tennessee, with a subtle Southern drawl, Saie appears to be cute and collected, but beware: even though she may be slightly on the short side, she\u2019s full of spunk. At night, she lives a double life, staying up until 3AM befriending often clueless high schoolers as a residential advisor and sending cool emails with lots of random pictures off the internet. By day, you can find her snapchatting in wet lab, jamming out to the best of the best (aka High School Musical and the Jonas Brothers. No shame. You can admit that you like them too; she won\u2019t judge.), all while casually inserting genes into plasmids with success. She co-leads the policy and practices subteam as well, determined to save every salmon in upstate New York. So how does she do it all? She may be busy, but don\u2019t fear. She\u2019ll always be there to comfort you with Netflix on those days where you want to stay in bed for 10 hours. Armed with a Starbucks Frappuccino in hand, Saie has no fear in tackling on whatever the world hands her, and she will do it with a smile.<\/p>"}
+if (bioNum == 1) { return "<h2>Yi Fan Chen | Wet Lab Lead<\/h2>\n<p>This man has been ingrained with Confuscious virtues since the day he was born. He works hard, hardly ever plays, gets barely any pay, yet never complains about the hardship to his bosses. In fact, he does not even regard his daily tribulations as difficulties. He merely sees them as challenges that builds character. (Hell, he evens cooks his meal, and he cooks it better than my mom does, whats up with that?) He knows that one day the mountains will be moved, the foes will be vanquished, and the sea departs to make way for him toward that stockpile of Nobel prices that is his birthright. And so he waits. He pipets. He autoclaves. He transforms. He only sleeps during the few hours of incubation. When he sleeps, he dreams:\"when that day comes, I am going to give 10% of every one of my Nobel Price money to my buddy_____\" (Yeah he better, because that buddy of his does not have a pension plan).<\/p>"}
+if (bioNum == 2) { return "<p>Amazing Grace, how sweet the sound,<br>\nThat miniprepped in the AM for me.<\/p>\n<p>While she is a bubbling spirit in the lab and a friend in our hearts, Grace is not a force to be reckoned with. Whether it\u2019s an adamant army of ants raiding her kitchen or plasmids refusing to cooperate, Chief Chuang is always ready to take on any challenge. An active member of CRU and close friends with Bill Nye the science dude, Grace is basically a manifestation of the positivity and friendliness exuded by a playful breeze on an Ithacan summer\u2019s day. Her loyalty, however, isn\u2019t fickle like the winds of the Northeast; rather, she finds herself at all hours tirelessly working in the lab, often jamming to numerous sick beats, until we have to physically kidnap her and dose her with Starbucks to bring her back to the real world. She co-leads the Policy and Practices subteam and is ready to cure the world\u2019s diseases. A master of photography, you can find this kind soul wandering through gardens and Farmer\u2019s Markets, trying to catch the sunlight in just the right way, before she captures an image only surpassed by a Van Gogh.<\/p>"}
+if (bioNum == 3) { return "<h2>Sachiye Koide | Co-ECE\/CS Lead<\/h2>\n<p>A legend has been foretold. When joy and fortune met, when they sought to sew together their ideals, they encoded their essence into their perfect set of nucleotides, and their story gave birth to this girl of the highest caliber. As she emits her radiant demeanor, all hints of evil contaminants shall be vanquished from her LB. As she exudes her joyous energy, all traces of negative emotions shall simply dissipate. Yes, her mere presence will be the sun that illuminates the darkness and fills the void that threatens to swallow the Cornell iGEM lab. Be it her unique tastes in music, or her peerless and impeccable cloning techniques, or her complete calmness in the presence of dangerous flying insects, she will imbue us with hope and strength to obliterate the peptidoglycan fortresses that stand against our mission. However, all of this conceal her true talent as a visionary and creator. With those animations so dynamic, so vibrant, she will surely lead us to victory. She is Sachiye Koide, and may her legend be forever carved into iGEM history.<\/p>"}
+if (bioNum == 4) { return "<h2>Gargi Ratnaparkhi | Co-ECE\/CS Lead<\/h2>\n<p>See George.<\/p>"}
+if (bioNum == 5) { return "<h2>George Danias | Project Development Lead<\/h2>\n<p>See Gargi.<\/p>"}
+if (bioNum == 6) { return "<h2>Reed Geisler<\/h2>\n<p>See Alan.<\/p>"}
+if (bioNum == 7) { return "<h2>Rishabh Singh<\/h2>\n<p>\"Captain's Log<br>\nEntry #421-1<br>\nSector: 2814<br>\nCoordinates: 42.4433\u00b0 N, 76.5000\u00b0 W<\/p>\n<p>\nMany moons ago, my crew and I were ordered by high command to hunt and capture a mythical creature named \"\"Rishabh\"\", though they say his true name of power remains lost to the eons. For decades, we studied his patterns, learned his ways. Rishabh, despite an eternity of wisdom, had devolved into a creature of habit, frequenting a small nearby establishment named \"\"Taco Bell\"\". The creature also displayed a certain affinity towards \"\"rap\"\" music, though our research team had yet to deciphering its meaning. When the time had come, our scouts tracked his last known location to Ithaca, where he had blended into the student populace; more specifically, the Cornell iGEM team. Tracking down Rishabh's lair was mere child's play; our crew commanded the best hunters in the known quadrant. And so we infiltrated and laid in wait, hoping to find the perfect moment to strike.\nBut so was he. \nIn my hubris, I underestimated the might of the ancient powers, at the cost of my crew's lives. One by one, we were slaughtered. I am the sole survivor. Even now, I am being hunted. My days left are numbered. It is coming for me. He is coming for me. If anyone receives this message, please send he\"<\/p>"}
+}
+</script>
+<div class="major-section">
+	<div class="container">
+		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+			<h1>Our Team</h1>
+		</section>
+	</div>
+	<div class="container">
+		<div onclick='collapseAllBut(0)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo0' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/1-Cornell_Saie.jpg>
+							</div>
+						</div>
+					</div><div onclick='collapseAllBut(1)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo1' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.1-Cornell_YiFan.jpg>
+							</div>
+						</div>
+					</div><div onclick='collapseAllBut(2)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo2' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.2-Grace.jpg>
+							</div>
+						</div>
+					</div><div onclick='collapseAllBut(3)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo3' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.3-Cornell_Sachi.jpg>
+							</div>
+						</div>
+					</div><div onclick='collapseAllBut(4)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo4' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.4-Gargi.jpg>
+							</div>
+						</div>
+					</div><div onclick='collapseAllBut(5)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo5' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.5-Cornell_GeorgeHeadshot.jpg>
+							</div>
+						</div>
+					</div><div id='bio0' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12 bio-section'>
+					</div><div onclick='collapseAllBut(6)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo6' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.6-Cornell_Reed.jpg>
+							</div>
+						</div>
+					</div><div onclick='collapseAllBut(7)'>
+						<div class='col-md-2 col-lg-2 col-sm-2 col-xs-2'>
+							<div class='team-member'>
+								<div class='team-member-mouseover-box'>
+								</div>
+								<img id='photo7' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.7-Cornell_Rishabh.jpg>
+							</div>
+						</div>
+					</div><div id='bio1' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12 bio-section'>
+					</div>	</div>
+</div>
+<script src="js/team.js?1462408969"></script>			<a name="recruiting" id="recruiting" class="anchor"></a>
+<div class="major-section container">
+	<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+		<h1>Recruiting</h1>
+	</section>
+	<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+		<big>
+			<p>
+				We're looking for excited students to push forth the field of synthetic biology. Our team is made of students from every year, every college, and every major. From gene-splicing in wet lab to pursuing business endeavors to organizing outreach events, bright passionate students make this team thrive.
+			</p>
+			<p>
+				Potential new team members apply in early January and join the team in the spring semester:
+			</p>
+			<p>
+				<lu>
+					<li>Spring: brainstorm next project and new member training (2 credits, 6-8 hrs/week)</li>
+					<li>Summer: on-campus project work (20+ hrs/week) All new team members are expected to stay in Ithaca over the summer</li>
+					<li>Fall: finish project and compete at iGEM jamborees (3-4 credits, 12-16 hrs/week)</li>
+				</lu>
+			</p>
+			<p>
+				We ask applicants to submit a resume to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team">cornelligem@gmail.com</a>. We will also look at any provided supplemental materials and conduct interviews before deciding on new members.
+			</p>
+			<p>
+				If you have any questions, feel free to send them to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team%20Questions">cornelligem@gmail.com</a>.
+			</p>
+		</big>
+	</section>
+</div>			<a name="sponsors" id="sponsors" class="anchor"></a>
+<div class="major-section">
+	<div class="container">
+		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+			<h1>Sponsors</h1>
+		</section>
+	</div>
+	<div class="container">
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_cornellcrest.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_biobasic.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_corning.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_alfaaesar.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_geneious.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_genscript.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_hardydiagnostics.jpg>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_idt.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_mathworks.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_neb.PNG>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_snapgene.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_thermofisher.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_vwr.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/DNA20-logo-for-iGEM.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/KS_Logo_Final.png>
+		</div>
+		<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+			<img class='img-responsive' src=resources/sponsors/version1.0/mendeley-logo-red.png>
+		</div>
+	</div>
+</div>		</div>
+	</div>
+	<!-- Footer Section -->
+	<div class="row footer">
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://www.youtube.com/iframe_api"></script>
+	<!--<script src="js/smoothscroll.js?1462408969"></script>-->
+	<script src="js/script.js?1462408969"></script>
+</body>
+</html>

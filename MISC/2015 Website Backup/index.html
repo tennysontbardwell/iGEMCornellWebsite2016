@@ -1,0 +1,270 @@
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/headertemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>		
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+		<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+		<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+		<!--[if gt IE 8]><!-->
+		<!-- IE Fix for HTML5 Tags -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Cornell University iGEM">
+		<meta name="keywords" content="Cornell University iGEM Genetically Engineered Machines Genetic Engineering Synthetic
+			Biology Project Team CU GEM CUGEM">
+		<title>Cornell University Genetically Engineered Machines</title>
+		<link rel="stylesheet" type="text/css" href="../foundation.css"/>
+		<link rel="stylesheet" type="text/css" href="../app.css">
+		<script type="text/javascript" src="../modernizr.js"></script>
+		<script type="text/javascript" src="../foundation.js"></script>
+		<script type="text/javascript" src="../app.js"></script>
+		<script type="text/javascript" src="../lightbox.js"></script>
+		<!-- InstanceBeginEditable name="ActivePage" -->
+		<script type="text/javascript">
+			$(window).load(function() {
+			$('#homepage-slideshow').orbit({
+			animation : 'horizontal-push', // fade, horizontal-slide, vertical-slide, horizontal-push
+			animationSpeed : 800, // how fast animtions are
+			timer : true, // true or false to have the timer
+			resetTimerOnClick : false, // true resets the timer instead of pausing slideshow progress
+			advanceSpeed : 8000, // if timer is enabled, time between transitions
+			pauseOnHover : false, // if you hover pauses the slider
+			startClockOnMouseOut : false, // if clock should start on MouseOut
+			startClockOnMouseOutAfter : 1000, // how long after MouseOut should the timer start again
+			directionalNav : true, // manual advancing directional navs
+			captions : false, // do you want captions?
+			captionAnimation : 'fade', // fade, slideOpen, none
+			captionAnimationSpeed : 400, // if so how quickly should they animate in
+			bullets : true, // true or false to activate the bullet navigation
+			bulletThumbs : false, // thumbnails for the bullets
+			bulletThumbLocation : '', // location from this file where thumbs will be
+			afterSlideChange : function() {
+			}, // empty function
+			fluid : true // or set a aspect ratio for content slides (ex: '4x3')
+			});
+			$('li.pg-home').addClass('active');
+			});
+		</script>
+		<!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<!-- Start of StatCounter Code -->
+			<script type="text/javascript">
+				var sc_project=9444205; 
+				var sc_invisible=1; 
+				var sc_security="87f0fc18"; 
+				var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+				document.write("<sc"+"ript type='text/javascript' src='" +
+					scJsHost+"statcounter.com/counter/counter.js'></"+"script>");
+			</script>
+			<noscript><div class="statcounter"><a title="hits counter" href="http://statcounter.com/free-hit-counter/" 
+				target=	"_blank"><img class="statcounter" src="http://c.statcounter.com/9444205/0/87f0fc18/1/" 
+				alt="hits counter"></a></div></noscript>
+		<!-- End of StatCounter Code -->
+		
+		<div class="row header off-canvas">
+			<div class="twelve columns centered header no-pad" id="header-wrapper">
+				<a href="index.html">
+					<div id="logo-wrapper">
+						<img alt="Cornell iGEM logo" src="../img/CornelliGEMLogo.jpg">
+					</div> 
+				</a>
+				<a href="http://2013.igem.org/Main_Page">
+					<div id="igem-attr">
+						<img alt="iGEM logo" src="../img/IGEMsmall.png">
+					</div> 
+				</a>
+				<ul class="nav-bar">
+					<li class="pg-home">
+						<a href="../index.html">Home</a>
+					</li>
+					<li class="has-flyout pg-overview pg-project pg-2009 pg-2010 pg-2011 pg-2012 pg-2013">
+						<a href="../projects.html">Project Wikis by Year</a>
+						<a href="../projects.html" class="flyout-toggle"><span> </span></a>
+						<ul class="flyout">
+							<li class="pg-overview">
+								<a href="../projects.html">Overview</a>
+							</li>
+							<li class="pg-2009">
+								<a href="http://2009.igem.org/Team:Cornell" target="_blank">iGEM 2009</a>
+							</li>
+							<li class="pg-2010">
+								<a href="http://2010.igem.org/Team:Cornell" target="_blank">iGEM 2010</a>
+							</li>
+							<li class="pg-2011">
+								<a href="http://2011.igem.org/Team:Cornell" target="_blank">iGEM 2011</a>
+							</li>
+							<li class="pg-2012">
+								<a href="http://2012.igem.org/Team:Cornell" target="_blank">iGEM 2012</a>
+							</li>
+							<li class="pg-2013">
+								<a href="http://2013.igem.org/Team:Cornell" target="_blank">iGEM 2013</a>
+							</li>
+							<li class="pg-2014">
+								<a href="http://2014.igem.org/Team:Cornell" target="_blank">iGEM 2014</a>
+							</li>
+							<li class="pg-2015">
+								<a href="http://2015.igem.org/Team:Cornell" target="_blank">iGEM 2015</a>
+							</li>
+						</ul>
+					</li>
+					<li class="pg-team">
+						<a href="../team.html">Team</a>
+					</li>
+					<li class="pg-recruiting">
+						<a href="../recruiting.html">Recruiting</a>
+					</li>
+					<li class="pg-sponsors">
+						<a href="../sponsors.html">Sponsors</a>
+					</li>
+					<li class="has-flyout">
+						<a></a>
+						<a href="http://2013.igem.org/Team:Cornell">
+						<div class="badge-wrapper-main">
+							<img alt="Cornell University Logo" style="margin-left: 2px;margin-top: 2px;height: 56px;" src="img/CornellBadgeLogo2.png">
+						</div> </a>
+						<a href="http://2013.igem.org/Team:Cornell"><span> </span></a>
+						<ul class="flyout right" style="display:none;background:none;border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none">
+							<li class="pg-badge_home">
+								<div class="badge-wrapper">
+									<a href="http://igem.engineering.cornell.edu">
+										<img alt="Cornell University Logo" style="margin-left: 2px;margin-top: 2px;height: 56px;" src="img/CornellBadgeLogo2.png">
+									</a>
+								</div>
+								<a href="http://igem.engineering.cornell.edu"  style="margin-top:-50px">Team Website</a>
+							</li>
+							<li class="pg-badge_2015">
+								<div class="badge-wrapper">
+									<a href="http://2015.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2015 Project" style="margin-top:18px; margin-left: 1px; width: 99%;" src="img/fishPHARMLogoBlack.png">
+									</a>
+								</div>
+								<a href="http://2014.igem.org/Team:Cornell">2015: fishPHARM</a>
+							</li>
+							<li class="pg-badge_2014">
+								<div class="badge-wrapper">
+									<a href="http://2014.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2014 Project" style="margin-left:9px;" src="http://2014.igem.org/wiki/images/1/15/Cornell_2015_bubble.png">
+									</a>
+								</div>
+								<a href="http://2014.igem.org/Team:Cornell">2014: Lead it Go</a>
+							</li>
+							<li class="pg-badge_2013">
+								<div class="badge-wrapper">
+									<a href="http://2013.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2013 Project" style="margin-left:7px;margin-top:2px;height:56px;" src="http://2013.igem.org/wiki/images/1/1c/CornellOrganofoamBadge.png">
+									</a>
+								</div>
+								<a href="http://2013.igem.org/Team:Cornell">2013: Organofoam</a>
+							</li>
+							<li class="pg-badge_2012">
+								<div class="badge-wrapper">
+									<a href="http://2012.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2012 Project" style="margin-left:2px;margin-top:-1px;height:65px;" src="http://2012.igem.org/wiki/images/7/70/Cornell2012Badge.png">
+									</a>
+								</div>							
+								<a href="http://2012.igem.org/Team:Cornell">2012: SAFE BET</a>
+							</li>
+							<li class="pg-badge_2011">
+								<div class="badge-wrapper">
+									<a href="http://2011.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2011 Project" style="margin-left:4px;margin-top:8px;height:44px;" src="http://2013.igem.org/wiki/images/4/46/CornellBiofactory.png">
+									</a>
+								</div>
+								<a href="http://2011.igem.org/Team:Cornell">2011: Biofactory</a>
+							</li>
+							<li class="pg-badge_2010">
+								<div class="badge-wrapper">
+									<a href="http://2010.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2010 Project" style="margin-left:-3px;margin-top:6px;height:60px;" src="http://2013.igem.org/wiki/images/3/3c/CornellOmgOmvs.png">
+									</a>
+								</div>
+								<a href="http://2010.igem.org/Team:Cornell">2010: OMG OMVs</a>
+							</li>
+							<li class="pg-badge_2009">
+								<div class="badge-wrapper">
+									<a href="http://2009.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2009 Project" style="margin-left:0px;height:60px;" src="http://2013.igem.org/wiki/images/a/a0/CornellCadmium.png">
+									</a>
+								</div>
+								<a href="http://2009.igem.org/Team:Cornell" style="font-size:20px !important">2009: Cadmium Sensor</a>
+							</li>
+						</ul>
+					</li>				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="EditRegion" -->
+		<!-- keywords: Cornell iGEM Genetically Engineered Machines Genetic Engineering Synthetic Biology Project Team CU GEM 
+			CUGEM-->
+		<div class="row">
+            <div class="eight columns" style="margin-bottom:20px;">
+				<div class="row">
+					<iframe width="605" height="405" src="https://www.youtube.com/embed/zq_KKnycgs8" frameborder="0" allowfullscreen></iframe>
+            	</div>
+			</div>
+			<div class="four columns" style="text-align:right;  margin-top:-10px; margin-bottom:5px; font-family:'Bitter'; font-size:17px">
+				Follow us on
+				<a href="http://www.facebook.com/cornelligem" target="_blank"> <img alt="Cornell iGEM Facebook" class="smediaimg" src="img/facebook.png"/></a>
+				<a href="http://twitter.com/CUGEM" target="_blank"> <img alt="Cornell iGEM Twitter" class="smediaimg" src="img/twitter.png"/></a>
+			</div>
+            <div class="four columns hompage-section" style="background:#E8E8E8;border-radius:5px;padding:5px 10px 10px 10px">
+            	<h4 style="margin:0px auto 0px;">News and Acheivements</h3>
+                <div style="font-size: 12px; margin-top:10px; height:325px; overflow:auto">	
+                	
+                	Congratulations to all our new CU iGem members!
+				<br /><br />
+				Check out our <a href="http://news.cornell.edu/stories/2015/10/student-team-reels-genetic-engineering-awards-competition" target="_blank">feature</a> in the Cornell Chronicle.
+				<br /><br />
+				Our 2015 project, <a href="http://2015.igem.org/Team:Cornell" target="_blank">fishPHARM</a>, was a big success! We won Best Undergrad Environmental Project along with Best Applied Design and Best Supporting Entrepreneurship. 
+				<br /><br /> 
+				Thanks to everyone who supported our <a href="https://crowdfunding.cornell.edu/project/739" target="_blank">crowdfunding campaign</a> and helped us reach 128% of our goal this year!
+				<br /><br />
+				Our work on the standarization of genetic engineering of filamentous fungi from the 2013 project was published in <a href="http://pubs.acs.org/doi/abs/10.1021/sb5000143">ACS Synthetic Biology.</a>
+				<br /><br />
+				We won a gold medal at the 2014 giant jamboree! Click <a href="http://2014.igem.org/Team:Cornell" target="_blank">here</a> to learn more about our project.
+				<br /><br />
+				Check out our <a href="http://www.elsevier.com/connect/cornell-undergrads-harness-bacteria-to-clean-up-toxic-site" target="_blank">article</a> published in Elsevier!
+				<br /><br />
+				<a href="http://www.snapgene.com/" target="_blank">SnapGene</a> featured us in their <a href="http://www.snapgene.com/company/press_releases/2013_12_06/" target="_blank"> newsletter</a>. Without contributions from sponsors such as SnapGene we wouldn't have been able achieve our goals. Thanks to all those who supported us!
+				<br /><br />
+				Take a look at another story about us in the <a href="http://cornellsun.com/blog/2013/11/13/peer-review-cornell-project-team-genetically-engineered-machines" target="_blank">Cornell Daily Sun</a>.
+				<br /><br />
+				We recieved Best Human Practice Advance at the World Jamboree! Popular Science considered us among the <a href="http://www.popsci.com/blog-network/biohackers/9-coolest-student-biology-projects-2013-igem-competition?dom=PSC&loc=recent&lnk=1&con=IMG" target="_blank">9 coolest projects</a> at the competition! 
+				<br /><br />
+				We were featured in the Cornell chronicle. Check out the article <a href="http://www.news.cornell.edu/stories/2013/10/cu-gem-improves-eco-friendly-styrofoam-substitute" target="_blank">here</a>!
+				<br /><br />
+				Cornell iGEM recieved a gold medal and the Best Human Practices award for the second year in a row at regionals. We're also advancing to the world championship jamboree at MIT!
+				<br /><br />
+				A sincere thanks to all our supporters on microryza. We reached our goal of $3000!
+				<br /><br />
+                At the <a href="http://2012.igem.org/World_Championship_Jamboree" target="_blank">World Championship Jamboree</a>, Cornell iGEM placed in the <a href="http://2012.igem.org/Jamborees" target="_blank">top 16</a>, one of only five North American universities to do so!
+				<br /><br />
+Cornell iGEM was a finalist at the <a href="http://2012.igem.org/Regions/Americas_East/Jamboree" target="_blank">Americas East Regional Jamboree</a>, and won Best Human Practices and Best Wiki.
+				<br /><br />
+CU GEM was featured in the <a href="http://www.idtdna.com/pages/decoded/decoded-articles/your-research/decoded/2012/04/13/igem-extending-the-reach-of-synthetic-biology" target="_blank">April issue</a> of IDT's <a href="http://www.idtdna.com/pages/decoded/" target="_blank">DECODED</a> quarterly journal.
+				<br /><br />
+CU GEM won in the Manufacturing category of the iGEM 2011 competition!
+				</div>
+            </div>
+      	</div>
+        <div class="row">
+            <div class="twelve columns hompage-section">
+                    <h3 style="margin:0px auto 0px;">About Us</h3>
+                    The Cornell University Genetically Engineered Machines (CU GEM) team is an international award-winning biology-inspired project team based in Cornell University. Our group is completely student run and is comprised of undergraduate students drawn from various disciplines and levels of expertise across the university. The team&rsquo;s mission is to design and develop a novel genetically modified platform, using the principles of synthetic biology, to compete at the world&rsquo;s premier synthetic biology competition - <a href="http://2015.igem.org/Main_Page" target="_blank">international Genetically Engineered Machines (iGEM)</a>.
+    
+    Our vision is to create synthetic biology tools and processes that will offer breakthrough answers to the many needs of industry and the economy.
+    				<br /><br />
+    				<h5 style="margin:0px auto 0px;">What is synthetic biology?</h3>
+                    Synthetic biology is based on the application of systems design to complex biological processes. By applying proven concepts from more traditional engineering fields to the biological domain, we seek to create new functions using standardized and well-characterized biological parts. In the same way that a electrical engineer picks parts off a shelf to design electrical circuits, synthetic biologists are well on their way towards creating an online registry of standardized parts (the <a href="http://partsregistry.org/Main_Page" target="_blank">Registry of Standard Biological Parts</a>) which they can use to design genetic circuits.
+					<br /><br />
+            </div>
+        </div>
+	</div>
+    <!-- InstanceEndEditable -->
+	</body>
+<!-- InstanceEnd --></html>

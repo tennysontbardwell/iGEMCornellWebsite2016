@@ -1,0 +1,308 @@
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/headertemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>		
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+		<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+		<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+		<!--[if gt IE 8]><!-->
+		<!-- IE Fix for HTML5 Tags -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Cornell University iGEM">
+		<meta name="keywords" content="Cornell University iGEM Genetically Engineered Machines Genetic Engineering Synthetic
+			Biology Project Team CU GEM CUGEM">
+		<title>Cornell University Genetically Engineered Machines</title>
+		<link rel="stylesheet" type="text/css" href="../foundation.css"/>
+		<link rel="stylesheet" type="text/css" href="../app.css">
+		<script type="text/javascript" src="../modernizr.js"></script>
+		<script type="text/javascript" src="../foundation.js"></script>
+		<script type="text/javascript" src="../app.js"></script>
+		<script type="text/javascript" src="../lightbox.js"></script>
+		<!-- InstanceBeginEditable name="ActivePage" -->
+		<script type="text/javascript">
+			$(window).load(function() {
+			$('#homepage-slideshow').orbit({
+			animation : 'horizontal-push', // fade, horizontal-slide, vertical-slide, horizontal-push
+			animationSpeed : 800, // how fast animtions are
+			timer : true, // true or false to have the timer
+			resetTimerOnClick : false, // true resets the timer instead of pausing slideshow progress
+			advanceSpeed : 8000, // if timer is enabled, time between transitions
+			pauseOnHover : false, // if you hover pauses the slider
+			startClockOnMouseOut : false, // if clock should start on MouseOut
+			startClockOnMouseOutAfter : 1000, // how long after MouseOut should the timer start again
+			directionalNav : true, // manual advancing directional navs
+			captions : false, // do you want captions?
+			captionAnimation : 'fade', // fade, slideOpen, none
+			captionAnimationSpeed : 400, // if so how quickly should they animate in
+			bullets : true, // true or false to activate the bullet navigation
+			bulletThumbs : false, // thumbnails for the bullets
+			bulletThumbLocation : '', // location from this file where thumbs will be
+			afterSlideChange : function() {
+			}, // empty function
+			fluid : true // or set a aspect ratio for content slides (ex: '4x3')
+			});
+			$('li.pg-overview').addClass('active');
+			});
+		</script>
+		<!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<!-- Start of StatCounter Code -->
+			<script type="text/javascript">
+				var sc_project=9444205; 
+				var sc_invisible=1; 
+				var sc_security="87f0fc18"; 
+				var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+				document.write("<sc"+"ript type='text/javascript' src='" +
+					scJsHost+"statcounter.com/counter/counter.js'></"+"script>");
+			</script>
+			<noscript><div class="statcounter"><a title="hits counter" href="http://statcounter.com/free-hit-counter/" 
+				target=	"_blank"><img class="statcounter" src="http://c.statcounter.com/9444205/0/87f0fc18/1/" 
+				alt="hits counter"></a></div></noscript>
+		<!-- End of StatCounter Code -->
+		
+		<div class="row header off-canvas">
+			<div class="twelve columns centered header no-pad" id="header-wrapper">
+				<a href="index.html">
+					<div id="logo-wrapper">
+						<img alt="Cornell iGEM logo" src="../img/CornelliGEMLogo.jpg">
+					</div> 
+				</a>
+				<a href="http://2013.igem.org/Main_Page">
+					<div id="igem-attr">
+						<img alt="iGEM logo" src="../img/IGEMsmall.png">
+					</div> 
+				</a>
+				<ul class="nav-bar">
+					<li class="pg-home">
+						<a href="../index.html">Home</a>
+					</li>
+					<li class="has-flyout pg-overview pg-project pg-2009 pg-2010 pg-2011 pg-2012 pg-2013">
+						<a href="../projects.html">Project Wikis by Year</a>
+						<a href="../projects.html" class="flyout-toggle"><span> </span></a>
+						<ul class="flyout">
+							<li class="pg-overview">
+								<a href="../projects.html">Overview</a>
+							</li>
+							<li class="pg-2009">
+								<a href="http://2009.igem.org/Team:Cornell" target="_blank">iGEM 2009</a>
+							</li>
+							<li class="pg-2010">
+								<a href="http://2010.igem.org/Team:Cornell" target="_blank">iGEM 2010</a>
+							</li>
+							<li class="pg-2011">
+								<a href="http://2011.igem.org/Team:Cornell" target="_blank">iGEM 2011</a>
+							</li>
+							<li class="pg-2012">
+								<a href="http://2012.igem.org/Team:Cornell" target="_blank">iGEM 2012</a>
+							</li>
+							<li class="pg-2013">
+								<a href="http://2013.igem.org/Team:Cornell" target="_blank">iGEM 2013</a>
+							</li>
+							<li class="pg-2014">
+								<a href="http://2014.igem.org/Team:Cornell" target="_blank">iGEM 2014</a>
+							</li>
+							<li class="pg-2015">
+								<a href="http://2015.igem.org/Team:Cornell" target="_blank">iGEM 2015</a>
+							</li>
+						</ul>
+					</li>
+					<li class="pg-team">
+						<a href="../team.html">Team</a>
+					</li>
+					<li class="pg-recruiting">
+						<a href="../recruiting.html">Recruiting</a>
+					</li>
+					<li class="pg-sponsors">
+						<a href="../sponsors.html">Sponsors</a>
+					</li>
+					<li class="has-flyout">
+						<a></a>
+						<a href="http://2013.igem.org/Team:Cornell">
+						<div class="badge-wrapper-main">
+							<img alt="Cornell University Logo" style="margin-left: 2px;margin-top: 2px;height: 56px;" src="img/CornellBadgeLogo2.png">
+						</div> </a>
+						<a href="http://2013.igem.org/Team:Cornell"><span> </span></a>
+						<ul class="flyout right" style="display:none;background:none;border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none">
+							<li class="pg-badge_home">
+								<div class="badge-wrapper">
+									<a href="http://igem.engineering.cornell.edu">
+										<img alt="Cornell University Logo" style="margin-left: 2px;margin-top: 2px;height: 56px;" src="img/CornellBadgeLogo2.png">
+									</a>
+								</div>
+								<a href="http://igem.engineering.cornell.edu"  style="margin-top:-50px">Team Website</a>
+							</li>
+							<li class="pg-badge_2015">
+								<div class="badge-wrapper">
+									<a href="http://2015.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2015 Project" style="margin-top:18px; margin-left: 1px; width: 99%;" src="img/fishPHARMLogoBlack.png">
+									</a>
+								</div>
+								<a href="http://2014.igem.org/Team:Cornell">2015: fishPHARM</a>
+							</li>
+							<li class="pg-badge_2014">
+								<div class="badge-wrapper">
+									<a href="http://2014.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2014 Project" style="margin-left:9px;" src="http://2014.igem.org/wiki/images/1/15/Cornell_2015_bubble.png">
+									</a>
+								</div>
+								<a href="http://2014.igem.org/Team:Cornell">2014: Lead it Go</a>
+							</li>
+							<li class="pg-badge_2013">
+								<div class="badge-wrapper">
+									<a href="http://2013.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2013 Project" style="margin-left:7px;margin-top:2px;height:56px;" src="http://2013.igem.org/wiki/images/1/1c/CornellOrganofoamBadge.png">
+									</a>
+								</div>
+								<a href="http://2013.igem.org/Team:Cornell">2013: Organofoam</a>
+							</li>
+							<li class="pg-badge_2012">
+								<div class="badge-wrapper">
+									<a href="http://2012.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2012 Project" style="margin-left:2px;margin-top:-1px;height:65px;" src="http://2012.igem.org/wiki/images/7/70/Cornell2012Badge.png">
+									</a>
+								</div>							
+								<a href="http://2012.igem.org/Team:Cornell">2012: SAFE BET</a>
+							</li>
+							<li class="pg-badge_2011">
+								<div class="badge-wrapper">
+									<a href="http://2011.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2011 Project" style="margin-left:4px;margin-top:8px;height:44px;" src="http://2013.igem.org/wiki/images/4/46/CornellBiofactory.png">
+									</a>
+								</div>
+								<a href="http://2011.igem.org/Team:Cornell">2011: Biofactory</a>
+							</li>
+							<li class="pg-badge_2010">
+								<div class="badge-wrapper">
+									<a href="http://2010.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2010 Project" style="margin-left:-3px;margin-top:6px;height:60px;" src="http://2013.igem.org/wiki/images/3/3c/CornellOmgOmvs.png">
+									</a>
+								</div>
+								<a href="http://2010.igem.org/Team:Cornell">2010: OMG OMVs</a>
+							</li>
+							<li class="pg-badge_2009">
+								<div class="badge-wrapper">
+									<a href="http://2009.igem.org/Team:Cornell">
+										<img alt="Cornell iGEM 2009 Project" style="margin-left:0px;height:60px;" src="http://2013.igem.org/wiki/images/a/a0/CornellCadmium.png">
+									</a>
+								</div>
+								<a href="http://2009.igem.org/Team:Cornell" style="font-size:20px !important">2009: Cadmium Sensor</a>
+							</li>
+						</ul>
+					</li>				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="EditRegion" -->
+        <div class="row">
+		<div class="two columns">
+			<ul class="side-nav">
+				<li>
+					<h6 style="margin-top:39px;">Projects</h6>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="projects.html#2015">2015 fishPHARM</a>
+				</li>
+				<li>
+					<a href="projects.html#2014">2014 Lead it go</a>
+				</li>
+				<li>
+					<a href="projects.html#2013">2013 Organofoam</a>
+				</li>
+				<li>
+					<a href="projects.html#2012">2012 SAFE BET</a>
+				</li>
+				<li>
+					<a href="projects.html#2011">2011 BioFactory</a>
+				</li>
+				<li>
+					<a href="projects.html#2010">2010 OMG OMVs</a>
+				</li>
+				<li>
+					<a href="projects.html#2009">2009</a>
+				</li>
+			</ul>
+		</div>
+            <div class="ten columns team-bios-container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h2 class="centered">Project Overviews</h2>
+                    </div>
+                </div>
+				 <div class="row">	
+                	<div id="2015" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2015: fishPHARM</h4>
+Sustainable and efficient aquaculture is one of the best ways of providing a growing global population with the food it needs to thrive. The overuse of antibiotics on today’s fish farms is detrimental to both the consumer and the aquaculture industry. Outbreaks of bacterial coldwater disease (BCWD) and lack of efficient preventative monitoring systems are real issues that affect the productivity of fish farmers today. We made it our mission to produce antibiotic-free treatments for BCWD, design and manufacture effective and safe drug delivery methods for aquacultured fish, and design and manufacture farm monitoring systems for the purpose of disease prevention and general fish well-being. With these initiatives, fishPHARM will help aquaculture around the globe attain a more sustainable position for food production.
+                        <div class="twelve columns controls" >
+							<a href="http://2015.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2015 Wiki</a>
+						</div>
+                    </div>
+               	</div>
+                <div class="row">	
+                	<div id="2014" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2014: Lead it go</h4>
+Inspired by the success of our 2012 project, Cornell iGem is introducing a novel heavy metal sequestration and filtration system for lead, nickel, and mercury remediation. To this end, we are engineering bacterial strains that will simultaneously express heavy metal transport proteins and metallothioneins, a class of low-molecular weight, cysteine-rich proteins with high binding affinities for various heavy metals. The heavy metal transport proteins are specific to certain metals and will cause rapid intake of these ions. The metallothioneins will then bind to these ions intracellularly and permanently sequester them. Our engineered cells are held in a hollow fiber reactor filtration device, which effectively prevents the cells from entering into the environment. We hope that our biological filtration system will help to inspire numerous polluted water treatments in the near future. 
+                        <div class="twelve columns controls" >
+							<a href="http://2014.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2014 Wiki</a>
+						</div>
+                    </div>
+               	</div>
+                <div class="row">	
+                	<div id="2013" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2013: Organofoam</h4>
+						For this year, we decided to branch out a bit from areas typically explored by iGEM, and work with a basidiomycotic fungus, <i><a href="http://en.wikipedia.org/wiki/Lingzhi_mushroom">Ganoderma lucidum</a></i>-- a medicinal mushroom well-known in China under the name Lingzhi. We were inspired by <a href="http://www.ecovativedesign.com/">Ecovative Design</a>, a company that produces a biodegradable styrofoam replacement from mushrooms like <i>G. lucidum</i>. We hope to develop a toolkit for genetically modifying basidiomycetes like <i>G. lucidum</i> so that other iGEM teams and companies like Ecovative Design will be able to approach genetic modification of higher-order fungi more easily.
+                        <div class="twelve columns controls" >
+							<a href="http://2013.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2013 Wiki</a>
+						</div>
+                    </div>
+               	</div>
+                <div class="row">
+                	<div id="2012" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2012: SAFE BET</h4>
+                        Building on last year's success, Cornell's iGEM 2012 team conceived, designed, and constructed a novel biosensor to remotely and continuously monitor arsenic levels in rivers. SAFE BET utilizes a genetically modified Shewanella oneidensis, an electroactive bacterium, to respond to the presence of arsenic by transferring electrons to an electrode, producing current that can be measured with a potentiostat. Starting with a mtrB knockout strain of S. oneidensis, we reintroduced mtrB on a plasmid under the control of an arsenic-inducible promoter. After our S. oneidensis is &quot;switched on&quot; by the presence of arsenic, an Arduino microcontroller processes the analog signal from the potentiostat into a digital signal that correlates to concentration of arsenic. An Android smartphone regularly sends arsenic level data to an online database accessible to anyone with an internet connection. SAFE BET was conceived to address the lack of a system to continuously monitor of water quality in areas affected by oil and gas extraction, but was designed to be modular &ndash; any inducible promoter can be swapped into our genetic construct and the device can be adapted for just about any environment. We believe SAFE BET complements current methods of chemical detection and will pave the way to improved protection of our greatest resource: water.
+                        <div class="twelve columns controls" >
+							<a href="http://2012.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2012 Wiki</a>
+						</div>
+                        <br /><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="2011" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2011: BioFactory</h4>
+                        Cornell&rsquo;s 2011 iGEM team has designed a new, scalable, and cell-free method to produce complex biomolecules. Current methods for purification from cellular lysate are expensive and time consuming. BioFactory utilizes modified enzymes, capable of being attached to surfaces, in the creation of a modular microfluidic chip for each enzyme. The surface bonding is performed by the well-characterized biotin-avidin mechanism. When combined in series, these chips operate as a linear biochemical pathway for continuous flow reactions. Additionally, we plan to engineer E. coli with the mechanism for light-induced apoptosis to easily lyse cultures producing the necessary enzymes. The resulting lysate is flowed through the microfluidic channels, coating them with the desired enzyme. We believe this chemical synthesis method will reduce unwanted side reactions and lower the costs of producing bio-pharmaceuticals in the future.
+                        <div class="twelve columns controls" >
+							<a href="http://2011.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2011 Wiki</a>
+						</div>
+                        <br /><br />
+                    </div>
+              	</div>
+                <div class="row">
+                	<div id="2010" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2010: OMG OMVs</h4>
+                        Outer membrane vesicles (OMVs) are natural secretions by gram-negative bacteria that can transport various proteins, lipids, and nucleic acids in interactions with mammalian host cells. OMV technology presents an affordable, non-toxic, and direct method of drug delivery and antigen tracking. We have designed a method for visualizing the interactions of mammalian cells with outer membrane vesicles by utilizing the ClyA surface protein as an attachment site for fluorescent proteins. The current goal of this project is to characterize the distribution of varying ClyA-fluorescent protein complexes on OMVs. Future work will be to develop a tracking system employing two ClyA constructs: a ClyA-fluorescent protein fusion for in vitro microscope imaging and a ClyA-single-chain antibody fragment to bind to an antigen.
+                        <div class="twelve columns controls" >
+							<a href="http://2010.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2010 Wiki</a>
+						</div>
+                        <br /><br />
+                    </div>    
+               	</div>
+                <div class="row last-ele">
+                    <div id="2009" class="twelve columns" style="margin-bottom:10px">
+                        <h4>iGEM 2009</h4>
+						In our first year participating in the iGEM competition, we attempted to construct a biosensor for heavy metal detection in water. Specifically, the idea was to use a cadmium-sensitive promoter to induce the production of fluorescent proteins.
+                        <div class="twelve columns controls" >
+							<a href="http://2009.igem.org/Team:Cornell" target="_blank" class="small button radius" style="margin-bottom:-10px">2009 Wiki</a>
+						</div>
+                    </div>
+                </div>		
+            </div>
+        </div>
+	<!-- InstanceEndEditable -->
+	</body>
+<!-- InstanceEnd --></html>
