@@ -1,52 +1,45 @@
 .logo{
 	/*background-image: "resources/logo/CornelliGEMLogo.jpg";*/
-	height: 50px;
-    /*margin-left: -10px;*/
-    margin-top: 3px;
-	border: solid #cccccc;
+	height: 27px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
-.logo-sup{
-    height:34px;
-    position: absolute;
-    left:120px;
-    top:6px;
+.navbar-default{
+    box-shadow: -5px 10px 50px #888888;
 }
 
-.rotate {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-
-    -webkit-transition: 300ms ease all;
-    -moz-transition: 300ms ease all;
-    -o-transition: 300ms ease all;
-    transition: 300ms ease all;
+.navbar-header{
+    height: 66px;
 }
 
-.rotate:hover {
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+.navbar-default .navbar-nav>li{
+    color: #607D8B;
 }
 
-@media (max-width: 900px) {
+.navbar-default .navbar-nav>li>a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 23px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(226,58,80,.5);
+    color: inherit;
+}
+
+.current-section-header{
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(226,58,80,1);
+}
+
+@media (max-width: 960px) {
     .navbar-header {
         float: none;
     }

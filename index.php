@@ -20,6 +20,7 @@
 	<!-- End development -->
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/aboutigem.css<?php bustCache()?>">
 	<link rel="stylesheet" href="css/achievements.css?<?php bustCache()?>">

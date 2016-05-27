@@ -8,14 +8,13 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<img class="logo" href="#" src="resources/logo/CornelliGEMLogo.jpg">
-			<img class="logo-sup rotate" src="resources/logo/IGEMsmall34px.png">
+			<img class="logo" href="#" src="resources/logo/Logo-Colored.png">
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a onclick="scrollToElem('aboutigem')">About iGEM</a></li>
+				<li><a onclick="scrollToElem('aboutigem')">About Us</a></li>
 <!-- 				<li><a onclick="scrollToElem('aboutus')">About Us</a></li>
  -->
  				<li><a onclick="scrollToElem('achievements')">Achievements</a></li>
@@ -24,13 +23,7 @@
 				<li><a onclick="scrollToElem('recruiting')">Recruiting</a></li>
 				<li><a onclick="scrollToElem('sponsors')">Sponsors</a></li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="https://www.facebook.com/cornelligem" class="pull-left"><img src="resources/social-media/facebook.png" height="28" style="max-width:100px; margin-top: -2px;"></a>
-					<a href="https://twitter.com/CUGEM" class="pull-left "><img src="resources/social-media/twitter.png" height="28" style="max-width:100px; margin-top: -2px; margin-left: -22px;"></a>
-				</li>
-			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
-<div style="height:50px"></div>
+<div style="height:66px"></div>
