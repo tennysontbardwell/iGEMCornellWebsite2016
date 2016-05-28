@@ -1,5 +1,5 @@
 <script src="js/video.js<?php bustCache()?>"></script>
-<div id="video-wrapper" align="center" class="row embed-responsive embed-responsive-16by9">
+<div id="video-wrapper" align="center" class="row full-width embed-responsive embed-responsive-16by9">
   <!-- <iframe id="video-iframe" src="https://www.youtube.com/embed/zq_KKnycgs8?autoplay=1;enablejsapi=1;rel=0" frameborder="0" allowfullscreen>
   </iframe> -->
   <div id="player"></div>
@@ -19,14 +19,7 @@
           videoId: 'zq_KKnycgs8',
           events: {
             'onReady': onPlayerReady,
-            // 'onPlayerStateChange': function(event){
-            //   wait(1);
-            //   player.pauseVideo();
-            // }
-          },
-          // playerVars: {
-          //   'autoplay': 1
-          // }
+          }
         });
         player.a.style.visibility = 'hidden';
       }

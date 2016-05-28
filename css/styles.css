@@ -3,6 +3,10 @@
   src: url('resources/fonts/proximanova-light-webfont.woff') format('woff');
 }
 
+.full-width {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 .section-header{
 	margin-top: 25px;
