@@ -1,8 +1,9 @@
+<script src="js/video.js<?php bustCache()?>"></script>
 <div id="video-wrapper" align="center" class="row embed-responsive embed-responsive-16by9">
-	<iframe id="video-iframe" src="https://www.youtube.com/embed/zq_KKnycgs8?autoplay=1;enablejsapi=1;rel=0" frameborder="0" allowfullscreen>
-	</iframe>
-	<!-- <div id="player"></div>
-	<script>
+  <!-- <iframe id="video-iframe" src="https://www.youtube.com/embed/zq_KKnycgs8?autoplay=1;enablejsapi=1;rel=0" frameborder="0" allowfullscreen>
+  </iframe> -->
+  <div id="player"></div>
+  <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
@@ -15,35 +16,21 @@
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          // height: '390',
-          // width: '640',
           videoId: 'zq_KKnycgs8',
           events: {
             'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
+            // 'onPlayerStateChange': function(event){
+            //   wait(1);
+            //   player.pauseVideo();
+            // }
+          },
+          // playerVars: {
+          //   'autoplay': 1
+          // }
         });
+        player.a.style.visibility = 'hidden';
       }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script> -->
+  </script>
+  <img id='video-placeholder' class='img-responsive' src='resources/placeholders/dog.jpg' onclick = 'pictureClicked()'>
 </div>
 <div id="video-bottom"></div>
-<script src="js/video.js<?php bustCache()?>"></script>

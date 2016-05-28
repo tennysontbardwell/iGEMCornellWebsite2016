@@ -1,11 +1,6 @@
 window.onload = function(){
 	teamSectionSetup();
-	videoSetup();
-}
-
-window.onscroll = function(){
-	videoScrollCheck();
-}
+};
 
 function scrollToElem(elemID){
     $('html, body').animate({
