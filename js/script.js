@@ -1,3 +1,11 @@
+function applyCSSTweeks() {
+    var headers = $('.section-header-javascriptTarget');
+    for (var i = 0; i < headers.length; i++){
+        headers[i].className = 'col-md-offset-2 col-md-6 col-lg-offset-2 col-lg-6 section-header';
+    }
+}
+applyCSSTweeks();
+
 window.onload = function(){
 	teamSectionSetup();
 };

@@ -100,7 +100,7 @@
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	}
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 950px) {
 
 		body { margin: 0; }
 

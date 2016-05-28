@@ -1,11 +1,10 @@
 <a name="subteams" id="subteams" class="anchor"></a>
-<div class="major-section">
 	<div class="container">
-		<section class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+		<div class="section-header-javascriptTarget">
 			<h1>Sub Teams</h1>
-		</section>
+		</div>
 	</div>
-</div>
+<div style="height: 1px"></div>
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
   <ol class="carousel-indicators">
