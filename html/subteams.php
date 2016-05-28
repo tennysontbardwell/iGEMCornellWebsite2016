@@ -54,8 +54,8 @@
     <div class="item">
       <img class="img-responsive center-block" src="resources/subteams/cs1440x470.jpg" alt="cs">
       <div class='subteam-blerb'>
-        <h2>Computer Science/Electrical and Computer Engineering</h2>
-        <p>The CS/ECE Design Team operates at the fusion of synthetic biology and technology.  The team works closely with Product Development in the research and design phases and spearheads all the coding and electrical engineering components of the dry lab product that take our project to the next level.  This includes developing smartphone apps, environmental monitoring systems, and biosensor technology.  In addition, the CS/ECE Design Team creates the competition wiki page and sponsorship video.</p>
+        <h2>CS/ECE Design</h2>
+        <p>The CS/ECE Design Team (Computer Science/Electrical and Computer Engineering) operates at the fusion of synthetic biology and technology.  The team works closely with Product Development in the research and design phases and spearheads all the coding and electrical engineering components of the dry lab product that take our project to the next level.  This includes developing smartphone apps, environmental monitoring systems, and biosensor technology.  In addition, the CS/ECE Design Team creates the competition wiki page and sponsorship video.</p>
       </div>
     </div>
 
