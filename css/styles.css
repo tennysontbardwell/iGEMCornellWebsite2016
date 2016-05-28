@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'proximanova-light';
+  src: url('resources/fonts/proximanova-light-webfont.woff') format('woff');
+}
+
+
 .section-header{
 	margin-top: 25px;
 	margin-bottom: 5px;
+	font-family: 'proximanova-light';
 }
 
 a.anchor {
