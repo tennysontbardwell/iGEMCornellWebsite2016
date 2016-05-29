@@ -15,9 +15,6 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a onclick="scrollToElem('aboutigem')">About Us</a></li>
-<!-- 				<li><a onclick="scrollToElem('aboutus')">About Us</a></li>
- -->
- 				<li><a onclick="scrollToElem('achievements')">Achievements</a></li>
 				<li><a onclick="scrollToElem('subteams')">Sub Teams</a></li>
 				<li><a onclick="scrollToElem('team')">Members</a></li>
 				<li><a onclick="scrollToElem('recruiting')">Recruiting</a></li>

@@ -1,6 +1,5 @@
-<a name="subteams" id="subteams" class="anchor"></a>
 	<div class="container">
-		<div class="section-header-javascriptTarget">
+		<div id="subteams" class="section-header-javascriptTarget">
 			<h1>Sub Teams</h1>
 		</div>
 	</div>

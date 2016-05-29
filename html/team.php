@@ -1,4 +1,3 @@
-<a name="team" id="team" class="anchor"></a>
 <script>
 function getHTMLStringForBio(bioNum){
 	<?php 
@@ -21,7 +20,7 @@ function getHTMLStringForBio(bioNum){
 	?>
 }
 </script>
-<section class="section-header-javascriptTarget">
+<section id="team" class="section-header-javascriptTarget">
 	<h1>Our Team</h1>
 </section>
 <div class="container">

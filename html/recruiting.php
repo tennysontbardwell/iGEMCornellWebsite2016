@@ -1,5 +1,4 @@
-<a name="recruiting" id="recruiting" class="anchor"></a>
-<section class="section-header-javascriptTarget">
+<section id="recruiting" class="section-header-javascriptTarget">
 	<h1>Recruiting</h1>
 </section>
 <section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">

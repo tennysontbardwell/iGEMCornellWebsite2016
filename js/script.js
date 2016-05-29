@@ -12,7 +12,7 @@ window.onload = function(){
 
 function scrollToElem(elemID){
     $('html, body').animate({
-    scrollTop: $("#"+elemID).offset().top
+    scrollTop: $("#"+elemID).offset().top - 80
     }, 400);
 }
 
