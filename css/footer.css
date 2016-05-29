@@ -1,5 +1,43 @@
 .footer {
-	height: 130px;
-	background-color: #a9a9a9;
-	margin-top: 50px;
+	height: 500px;
+	background-image: url("../resources/footer/footer.png");
+	background-size: 100% 100%;
+	padding-top: 355px;
+	margin-top: 0px;
+}
+
+.footer div{
+	text-align: center;
+}
+
+.contact-us{
+	margin-left: -30px;
+	padding: 0;
+	color: white;
+	font: "proximanova-light";
+}
+
+.contact-us li{
+	display: inline-block;
+	vertical-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contact-us li a{
+	color: inherit;
+	font: inherit;
+}
+
+.contact-us li h3{
+	margin-right: 30px;
+}
+
+.contact-us li img{
+	height: 18px;
+	display: inline;
+	margin-top: -5px;
+	margin-right: 10px;
 }

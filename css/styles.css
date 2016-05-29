@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'proximanova-light';
-  src: url('resources/fonts/proximanova-light-webfont.woff') format('woff');
+  src: url('../resources/fonts/proximanova-light-webfont.woff') format('woff');
 }
 
 .full-width {

@@ -54,3 +54,6 @@
 		<img class='img-responsive' src=resources/sponsors/version1.0/mendeley-logo-red.png>
 	</div>
 </div>
+<div class="container">
+	<img class='img-responsive' src="resources/buttons/download_sp.png">
+</div>
