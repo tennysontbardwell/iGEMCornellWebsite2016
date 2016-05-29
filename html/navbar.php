@@ -14,11 +14,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a onclick="scrollToElem('aboutigem')">About Us</a></li>
-				<li><a onclick="scrollToElem('subteams')">Sub Teams</a></li>
-				<li><a onclick="scrollToElem('team')">Members</a></li>
-				<li><a onclick="scrollToElem('recruiting')">Recruiting</a></li>
-				<li><a onclick="scrollToElem('sponsors')">Sponsors</a></li>
+				<li><a id="navbar-aboutus" onclick="scrollToElem('aboutigem')">About Us</a></li>
+				<li><a id="navbar-subteams" onclick="scrollToElem('subteams')">Sub Teams</a></li>
+				<li><a id="navbar-team" onclick="scrollToElem('team')">Members</a></li>
+				<li><a id="navbar-recruiting" onclick="scrollToElem('recruiting')">Recruiting</a></li>
+				<li><a id="navbar-sponsors" onclick="scrollToElem('sponsors')">Sponsors</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
