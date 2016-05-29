@@ -11,6 +11,10 @@
 .section-header{
 	margin-top: 25px;
 	margin-bottom: 5px;
+  font-family: 'proximanova-light';
+}
+
+h1, h2, h3, h4, h5{
 	font-family: 'proximanova-light';
 }
 

@@ -24,6 +24,33 @@
         player.a.style.visibility = 'hidden';
       }
   </script>
-  <img id='video-placeholder' class='img-responsive' src='resources/placeholders/dog.jpg' onclick = 'pictureClicked()'>
+  <div class="header-placeholder" onclick = 'pictureClicked()'>
+    <ul>
+      <li><span>
+        <h1 class="header-title">Find out what Cornell’s only synthetic biology team is all about</h1>
+      </span></li>
+      <li><span>
+        <img class="header-playbutton" src="resources/header/play.png">
+      </span></li>
+      <li><span>
+        <ul class="header-info-buttons-desktop">
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+        </ul>
+      </span></li>
+    </ul>
+  </div>
 </div>
 <div id="video-bottom"></div>
+<div class="container header-info-buttons-mobile">
+  <div class="col-sm-4">
+    <img class="img-responsive" src="resources/header/button_WL_col.png">
+  </div>
+  <div class="col-sm-4">
+    <img class="img-responsive" src="resources/header/button_DL_col.png">
+  </div>
+  <div class="col-sm-4">
+    <img class="img-responsive" src="resources/header/button_PP_col.png">
+  </div>
+</div>

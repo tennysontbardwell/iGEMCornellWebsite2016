@@ -21,5 +21,5 @@ function onPlayerReady(event) {
 function pictureClicked(){
 	maybePlayVideo('picture');
 	player.a.style.visibility = 'visible';
-	$('#video-placeholder')[0].style.visibility = 'hidden';
+	$('.header-placeholder')[0].style.visibility = 'hidden';
 }
