@@ -53,6 +53,8 @@
 		<img class='img-responsive' src=resources/sponsors/version1.0/mendeley-logo-red.png>
 	</div>
 </div>
-<div class="container col-lg-8 col-lg-offset-2">
-	<img class='img-responsive' src="resources/buttons/download_sp.png">
+<div class="container col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+	<a href="resources/sponsors/Sponsorship-Packet.pdf">
+		<img class='img-responsive' src="resources/buttons/download_sp.png">
+	</a>
 </div>

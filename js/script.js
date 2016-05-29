@@ -13,11 +13,21 @@ window.onload = function(){
 window.onscroll = function(){
     updateNavbar();
 };
+window.onresize = function(){
+    updateNavbar();
+};
 
 function scrollToElem(elemID){
-    $('html, body').animate({
-    scrollTop: $("#"+elemID).offset().top - 80
-    }, 400);
+    if (elemID === ''){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+    }
+    else{
+        $('html, body').animate({
+            scrollTop: $("#"+elemID).offset().top - 80
+        }, 400);
+    }
 }
 
 // https://stackoverflow.com/questions/5353934/check-if-element-is-visible-on-screen

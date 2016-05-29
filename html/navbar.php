@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<img class="logo" href="#" src="resources/logo/Logo-Colored.png">
+			<img class="logo" href="#" src="resources/logo/Logo-Colored.png" onclick="scrollToElem('')">
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
