@@ -25,3 +25,6 @@
 		</p>
 	</big>
 </section>
+<div class="container col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
+	<img class='img-responsive' src="resources/buttons/download.png">
+</div>
