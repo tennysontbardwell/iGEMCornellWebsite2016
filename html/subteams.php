@@ -4,7 +4,8 @@
 		</div>
 	</div>
 <div style="height: 1px"></div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -69,4 +70,5 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
