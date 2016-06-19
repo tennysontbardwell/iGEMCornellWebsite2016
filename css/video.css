@@ -8,12 +8,11 @@
 .header-playbutton{
 	margin-left: auto;
 	margin-right: auto;
-	-webkit-transition: -webkit-filter 250ms ease;
 	height: 4.5vw;
 }
 
-.header-playbutton:hover{
-	-webkit-filter: brightness(80%);
+.header-placeholder:hover{
+	-webkit-transition: -webkit-filter 250ms ease;
 }
 
 .header-title{
@@ -21,6 +20,10 @@
 	padding-top: 40px;
 	color: white;
 	font-size: 50px;
+}
+
+.header-placeholder:hover {
+	-webkit-filter: brightness(80%);
 }
 
 .header-placeholder > ul{
