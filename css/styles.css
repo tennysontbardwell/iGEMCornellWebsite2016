@@ -24,3 +24,8 @@ a.anchor {
     top: -50px;
     visibility: hidden;
 }
+
+.page-section{
+  background-color: rgba(128, 128, 128, 0.16);
+  padding: 0px;
+}

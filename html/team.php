@@ -57,3 +57,4 @@ function getHTMLStringForBio(bioNum){
 	?>
 </div>
 <script src="js/team.js<?php bustCache()?>"></script>
+<div style="height: 50px;"></div>

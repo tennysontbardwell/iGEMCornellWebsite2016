@@ -1,8 +1,9 @@
-	<div class="container">
-		<div id="subteams" class="section-header-javascriptTarget">
-			<h1>Sub Teams</h1>
-		</div>
+<div class="page-section container-fluid">
+<div class="container-fluid">
+	<div id="subteams" class="section-header-javascriptTarget">
+    <h1>Sub Teams</h1>
 	</div>
+</div>
 <div style="height: 1px"></div>
 <div class="container">
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
@@ -70,5 +71,6 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
 </div>
