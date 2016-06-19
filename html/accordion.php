@@ -8,7 +8,7 @@
 		margin: 50px auto;
 	}
 
-	.accordion ul {
+	.accordion > ul {
 		width: 100%;
 		display: table;
 		table-layout: fixed;
@@ -16,7 +16,7 @@
 		padding: 0;
 	}
 
-	.accordion ul li {
+	.accordion > ul > li {
 		display: table-cell;
 		vertical-align: bottom;
 		position: relative;
@@ -27,13 +27,13 @@
 		transition: all 500ms ease;
 	}
 
-	.accordion ul li div {
+	.accordion > ul > li > div {
 		display: block;
 		overflow: hidden;
 		width: 100%;
 	}
 
-	.accordion ul li div a {
+	.accordion > ul > li > div > a {
 		display: block;
 		height: 350px;
 		width: 100%;
@@ -48,7 +48,7 @@
 		transition: all 200ms ease;
 	}
 
-	.accordion ul li div a * {
+	.accordion > ul > li > div > a > * {
 		opacity: 0;
 		margin: 0;
 		width: 100%;
@@ -63,7 +63,7 @@
 		transition: all 400ms ease;
 	}
 
-	.accordion ul li div a h2 {
+	.accordion > ul > li > div > a > h2 {
 		font-family: Montserrat, sans-serif;
 		text-overflow: clip;
 		font-size: 24px;
@@ -72,30 +72,30 @@
 		top: 160px;
 	}
 
-	.accordion ul li div a p {
+	.accordion > ul > li > div > a > p, .accordion > ul > li > div > a > ul {
 		top: 160px;
 		font-size: 13.5px;
 	}
 
-	.accordion ul li:nth-child(1) { background-image: url("resources/projects/fishpharm350.jpg") }
+	.accordion > ul > li:nth-child(1) { background-image: url("resources/projects/teamphoto800x350.jpg") }
 
-	.accordion ul li:nth-child(2) { background-image: url("resources/placeholders/Mold_contaminantssmaller.png"); }
+	.accordion > ul > li:nth-child(2) { background-image: url("resources/projects/grass800x350.jpg"); }
 
-	.accordion ul li:nth-child(3) { background-image: url("resources/projects/organofoam350x800.jpg"); }
+	.accordion > ul > li:nth-child(3) { background-image: url("resources/projects/organofoam350x800.jpg"); }
 
-	.accordion ul li:nth-child(4) { background-image: url("resources/projects/inriver350.jpg"); }
+	.accordion > ul > li:nth-child(4) { background-image: url("resources/projects/inriver350.jpg"); }
 
 /*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
 
 	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }
 */
-	.accordion ul:hover li { width: 8%; }
+	.accordion > ul:hover > li { width: 8%; }
 
-	.accordion ul:hover li:hover { width: 60%; }
+	.accordion > ul:hover > li:hover { width: 60%; }
 
-	.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.6); }
+	.accordion > ul:hover > li:hover a { background: rgba(0, 0, 0, 0.6); }
 
-	.accordion ul:hover li:hover a * {
+	.accordion > ul:hover > li:hover a * {
 	opacity: 1;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
@@ -106,10 +106,10 @@
 
 		.accordion { height: auto; }
 
-		.accordion ul li,
-		.accordion ul li:hover,
-		.accordion ul:hover li,
-		.accordion ul:hover li:hover {
+		.accordion > ul > li,
+		.accordion > ul > li:hover,
+		.accordion > ul:hover li,
+		.accordion > ul:hover li:hover {
 			position: relative;
 			display: table;
 			table-layout: fixed;
