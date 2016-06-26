@@ -21,7 +21,7 @@ function getHTMLStringForBio(bioNum){
 }
 </script>
 <section id="team" class="section-header-javascriptTarget">
-	<h1>Our Team</h1>
+	<h2>Our Team</h2>
 </section>
 <div class="container">
 </div>
