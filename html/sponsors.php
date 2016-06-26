@@ -3,7 +3,7 @@
 		<!-- <div class="panel-heading"> -->
 			<div id="sponsors" class="section-header-javascriptTarget">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSponsors">
-					<h1>Sponsors</h1>
+					<h2>Sponsors</h2>
 			</a>
 			</div>
 		<!-- </div> -->
