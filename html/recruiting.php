@@ -1,6 +1,6 @@
 <div class="page-section container-fluid">
 <section id="recruiting" class="section-header-javascriptTarget">
-	<h1>Recruiting</h1>
+	<h2>Recruiting</h2>
 </section>
 <section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 	<big>
