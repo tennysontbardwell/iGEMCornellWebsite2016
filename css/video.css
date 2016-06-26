@@ -8,8 +8,7 @@
 .header-playbutton{
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
-	height: 4vw;
+	height: 4.5vw;
 }
 
 .header-placeholder:hover{
@@ -17,7 +16,7 @@
 }
 
 .header-title{
-	margin-top: 5px;
+	margin-top: 0px;
 	padding-top: 40px;
 	color: white;
 	font-size: 60px;
@@ -98,6 +97,6 @@
 
 @media(min-width: 1200px){
 	.header-info-buttons-desktop > li > div{
-		margin-top: 4vw;
+		margin-top: 5vw;
 	}
 }
