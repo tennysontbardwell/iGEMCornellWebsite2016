@@ -1,16 +1,17 @@
 .logo{
 	/*background-image: "resources/logo/CornelliGEMLogo.jpg";*/
-	height: 27px;
-    margin-right: 20px;
-    margin-top: 20px;
+	height: 35px;
+	margin-right: 40px;
+	margin-top: 19px;
+	margin-left: 20px;
 }
 
 .navbar-default{
-    box-shadow: -5px 10px 50px #888888;
+    box-shadow: -5px 10px 50px #E0E0E0;
 }
 
 .navbar-header{
-    height: 66px;
+    height: 78px;
 }
 
 .navbar-default .navbar-nav>li{
@@ -18,10 +19,10 @@
 }
 
 .navbar-default .navbar-nav>li>a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    padding-top: 23px;
-    padding-bottom: 5px;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 16px;
+    padding-top: 22px;
+    padding-bottom: 12px;
     text-transform: uppercase;
     color: inherit;
 }
@@ -29,14 +30,14 @@
 .navbar-default .navbar-nav>li>a:hover{
     border-bottom-width: initial;
     border-bottom-style: solid;
-    border-bottom-color: rgba(226,58,80,.5);
+    border-bottom-color: rgba(244,67,54,.6);
     color: inherit;
 }
 
 .current-section-header{
     border-bottom-width: initial;
     border-bottom-style: solid;
-    border-bottom-color: rgba(226,58,80,1);
+    border-bottom-color: rgba(244,67,54,1);
 }
 
 @media (max-width: 960px) {
