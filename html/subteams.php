@@ -1,7 +1,7 @@
 <div class="page-section container-fluid">
 <div class="container-fluid">
 	<div id="subteams" class="section-header-javascriptTarget">
-    <h1>Sub Teams</h1>
+    <h2>Sub Teams</h2>
 	</div>
 </div>
 <div style="height: 1px"></div>
