@@ -1,6 +1,6 @@
 <a name="aboutigem" id="aboutigem" class="anchor"></a>
 <section class="section-header-javascriptTarget">
-	<h1>About iGEM</h1>
+	<h2>About iGEM</h2>
 </section>
 <section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 	<big>
