@@ -1,6 +1,6 @@
 <a name="projects" id="projects" class="anchor"></a>
 <section class="section-header-javascriptTarget">
-	<h1>Past Projects</h1>
+	<h2>Past Projects</h2>
 </section>
 
 <div class="accordion">
