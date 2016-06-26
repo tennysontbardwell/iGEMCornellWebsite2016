@@ -1,6 +1,6 @@
 <a name="achievements" id="achievements" class="anchor"></a>
 <section class="section-header-javascriptTarget">
-	<h1>Achievements</h1>
+	<h2>Achievements</h2>
 </section>
 <div class="container">
 </div>
