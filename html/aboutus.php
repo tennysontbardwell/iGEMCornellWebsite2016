@@ -1,7 +1,7 @@
 <div class="page-section container-fluid">
 <a name="aboutus" id="aboutus" class="anchor"></a>
 <section class="section-header-javascriptTarget">
-	<h1>About Us</h1>
+	<h2>About Us</h2>
 </section>
 <section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8" style='margin-bottom: 50px;'>
 	<big>
