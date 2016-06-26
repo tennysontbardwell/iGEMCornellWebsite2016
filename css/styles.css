@@ -27,10 +27,16 @@
 
 h1 {
 	font-family: 'proximanova-thin';
+  font-size: 60px;
 }
 
 h2, h3, h4, h5{
 	font-family: 'proximanova-light';
+  font-size: 36px;
+}
+
+body{
+  font-family: 'proximanova-regular';
 }
 
 a.anchor {
