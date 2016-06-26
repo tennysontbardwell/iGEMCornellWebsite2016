@@ -1,9 +1,9 @@
 .footer {
 	height: 500px;
-	background-image: url("../resources/footer/footer.png");
+	background-image: url("../resources/footer/footer_wide.jpg");
 	background-size: 100% 100%;
-	padding-top: 355px;
-	margin-top: 0px;
+	padding-top: 300px;
+	margin-top: 100px;
 }
 
 .footer div{
