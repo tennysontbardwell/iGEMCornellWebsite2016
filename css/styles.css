@@ -5,8 +5,8 @@
 } 
 @font-face {
   font-family: 'proximanova-thin';
-  src: url('../resources/fonts/proximanova-thin-webfont.woff') format('woff'),
-  	url('../resources/fonts/proximanova-thin-webfont.ttf') format('truetype');
+  src: url('../resources/fonts/proximanovat-thin-webfont.woff') format('woff'),
+  	url('../resources/fonts/proximanovat-thin-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'proximanova-regular';
@@ -25,7 +25,11 @@
   font-family: 'proximanova-light';
 }
 
-h1, h2, h3, h4, h5{
+h1 {
+	font-family: 'proximanova-thin';
+}
+
+h2, h3, h4, h5{
 	font-family: 'proximanova-light';
 }
 
