@@ -46,6 +46,7 @@
     }
     .navbar-toggle {
         display: block;
+        margin-top: 19px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;

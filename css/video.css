@@ -1,6 +1,6 @@
 .header-placeholder{
 	width: 100%;
-	height: 56vw;
+	height: 850px;
 	background-image: url('../resources/header/header_wide-webOpt.jpg');
 	background-size: cover;
 }
@@ -8,27 +8,30 @@
 .header-playbutton{
 	margin-left: auto;
 	margin-right: auto;
-	height: 4.5vw;
+	height: 50px;
 }
 
 .header-placeholder:hover{
 	-webkit-transition: -webkit-filter 250ms ease;
 }
 
-.header-title{
-	margin-top: 0px;
-	padding-top: 40px;
-	color: white;
-	font-size: 60px;
+.header-title {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    padding-top: 40px;
+    max-width: 900px;
+    color: white;
+    font-size: 60px;
 }
 
 .header-placeholder:hover {
-	-webkit-filter: brightness(80%);
+	-webkit-filter: brightness(90%);
 }
 
 .header-placeholder > ul{
 	display: table;
 	table-layout: fixed;
+	margin: 0 auto;
 	width: 100%;
 	height: 70%;
 }
@@ -50,16 +53,18 @@
 }
 
 .header-info-buttons-desktop > li{
+	padding-left: 0px;
 	display: inline-block;
+	text-align: center;
 	width: 25vw;
-	height: 20vw;
+	height: 20vh;
 	z-index: 1
 }
 
 .header-info-buttons-desktop > li > div{
-	margin-top: 1vw;
+	margin-top: 50px;
 	width: 25vw;
-	height: 20vw;
+	height: 250px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -80,10 +85,34 @@
 	display: none;
 }
 
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 850px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive iframe {
+    height: 750px;
+}
 @media(max-width: 900px){
 	.header-playbutton{
 		margin-top: 3vw;
-		height: 15vw;
+		height: 70px;
+	}
+	
+	.header-title {
+		margin-top: 63px;
+		margin-bottom: 45px;;
+		font-size: 52px;
+	}
+	
+	.header-placeholder{
+		width: 100%;
+		height: 600px;
+		background-image: url('../resources/header/header_wide-webOpt.jpg');
+		background-size: cover;
 	}
 
 	.header-info-buttons-desktop > li > div{
@@ -92,6 +121,18 @@
 
 	.header-info-buttons-mobile{
 		display: block;
+	}
+	
+	.embed-responsive {
+		position: relative;
+		display: block;
+		height: 600px;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	.embed-responsive iframe {
+    	height: 600px;
 	}
 }
 
