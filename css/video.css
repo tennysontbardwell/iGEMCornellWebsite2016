@@ -3,6 +3,8 @@
 	height: 850px;
 	background-image: url('../resources/header/header_wide-webOpt.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
+    	background-position: center;
 }
 
 .header-playbutton{
