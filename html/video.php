@@ -45,12 +45,18 @@
 <div id="video-bottom"></div>
 <div class="container header-info-buttons-mobile">
   <div class="col-sm-4">
-    <img class="img-responsive" src="resources/header/button_WL_col.png">
+    <img class="img-responsive" src="resources/header/button_WL_col.png" style="
+        padding-bottom: 40px;
+    ">
   </div>
   <div class="col-sm-4">
-    <img class="img-responsive" src="resources/header/button_DL_col.png">
+    <img class="img-responsive" src="resources/header/button_DL_col.png" style="
+        padding-bottom: 40px;
+    ">
   </div>
   <div class="col-sm-4">
-    <img class="img-responsive" src="resources/header/button_PP_col.png">
+    <img class="img-responsive" src="resources/header/button_PP_col.png" style="
+        padding-bottom: 40px;
+    ">
   </div>
 </div>

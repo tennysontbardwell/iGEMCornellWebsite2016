@@ -129,10 +129,14 @@
 		visibility: hidden;
 	}
 
-	.header-info-buttons-mobile{
-		display: block;
+	.header-info-buttons-mobile {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
-	
+		
 	.embed-responsive {
 		position: relative;
 		display: block;
@@ -143,6 +147,17 @@
 	
 	.embed-responsive iframe {
     	height: 600px;
+	}
+}
+
+@media(max-width: 770px) {
+	.header-info-buttons-mobile {
+		display: block;
+	}
+
+	.col-sm-4 {
+		margin: 0 auto;
+		width: 70%
 	}
 }
 

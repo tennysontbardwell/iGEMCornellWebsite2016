@@ -81,3 +81,11 @@
         overflow: hidden!important;
     }
 }
+
+@media (max-width: 425px) {
+    .logo{
+        height: 25px;
+        margin-top: 25px;
+        margin-right: 0px;
+    }
+}
