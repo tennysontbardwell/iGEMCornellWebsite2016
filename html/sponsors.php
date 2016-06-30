@@ -63,7 +63,10 @@
 		</div></div>
 		<div class="container col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" style="margin-top: 30px;">
 			<a href="resources/sponsors/Sponsorship-Packet.pdf">
-				<img class='img-responsive' src="resources/buttons/download_sp.png">
+				<img class="img-responsive" src="resources/buttons/download_sp.png" style="
+					max-width: 70%;
+					margin: 0 auto;
+				">
 			</a>
 		</div>
 	</div>
