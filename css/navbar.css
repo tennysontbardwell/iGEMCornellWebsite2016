@@ -1,7 +1,7 @@
 .logo{
 	/*background-image: "resources/logo/CornelliGEMLogo.jpg";*/
 	height: 35px;
-	margin-right: 40px;
+	margin-right: 46px;
 	margin-top: 19px;
 	margin-left: 20px;
 }
@@ -18,11 +18,14 @@
     color: #607D8B;
 }
 
-.navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a {
     font-family: 'Roboto Medium', sans-serif;
     font-size: 16px;
     padding-top: 22px;
     padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
     text-transform: uppercase;
     color: inherit;
 }
@@ -30,7 +33,7 @@
 .navbar-default .navbar-nav>li>a:hover{
     border-bottom-width: initial;
     border-bottom-style: solid;
-    border-bottom-color: rgba(244,67,54,.6);
+    border-bottom-color: #FF7043;
     color: inherit;
 }
 

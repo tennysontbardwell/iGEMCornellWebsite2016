@@ -8,7 +8,7 @@
 		<li>
 			<div>
 				<a href="http://2015.igem.org/Team:Cornell">
-					<h2>fishPHARM - 2015</h2>
+					<h4>fishPHARM - 2015</h4>
 					<p>Novel drug delivery system and probiotic treatment for Bacterial Coldwater Disease and app for monitoring nutrient content in fish hatcheries</p>
 					<ul>
 						<li>Achieved gold medal for fifth consecutive year</li>
@@ -19,7 +19,7 @@
 		</li>
 		<li>
 			<div> <a href="http://2014.igem.org/Team:Cornell">
-				<h2>Lead it Go - 2014</h2>
+				<h4>Lead it Go - 2014</h4>
 				<p>Continuous water filtration system to sequester heavy metals</p>
 				<ul>
 					<li>Achieved gold medal classification for fourth consecutive year in iGEM</li>
@@ -28,7 +28,7 @@
 		</li>
 		<li>
 			<div> <a href="http://2013.igem.org/Team:Cornell")>
-				<h2>Organofoam - 2013</h2>
+				<h4>Organofoam - 2013</h4>
 				<p>Comprehensive genetic toolkit for fungal engineering</p>
 				<ul>
 					<li>Won Best Human Practices Advance at North American iGEM competition</li>
@@ -38,7 +38,7 @@
 		</li>
 		<li>
 			<div> <a href="http://2012.igem.org/Team:Cornell")>
-				<h2>Safe Bet - 2012</h2>
+				<h4>Safe Bet - 2012</h4>
 				<p>Real-time arsenic biosensor</p>
 				<ul>
 					<li>Awarded top 4 finalist regionally, won Best Wiki and Best Human Practices Advance awards</li>

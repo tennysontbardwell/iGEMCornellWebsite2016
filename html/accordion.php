@@ -44,7 +44,7 @@
 		box-sizing: border-box;
 		color: #fff;
 		text-decoration: none;
-		font-family: Open Sans, sans-serif;
+		font-family: proximanova-light;
 		transition: all 200ms ease;
 	}
 
@@ -63,13 +63,11 @@
 		transition: all 400ms ease;
 	}
 
-	.accordion > ul > li > div > a > h2 {
-		font-family: Montserrat, sans-serif;
+	.accordion > ul > li > div > a > h4 {
 		text-overflow: clip;
-		font-size: 24px;
 		text-transform: uppercase;
 		margin-bottom: 2px;
-		top: 160px;
+		top: 144px;
 	}
 
 	.accordion > ul > li > div > a > p, .accordion > ul > li > div > a > ul {

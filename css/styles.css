@@ -30,9 +30,21 @@ h1 {
   font-size: 60px;
 }
 
-h2, h3, h4, h5{
+h2, h4, h5{
 	font-family: 'proximanova-light';
   color:#616161;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'proximanova-light';
+  color:#ffffff;
+  font-size: 36px;
+}
+
+h4 {
+  font-family: 'proximanova-thin';
+  color:#ffffff;
   font-size: 36px;
 }
 
@@ -48,6 +60,6 @@ a.anchor {
 }
 
 .page-section{
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgba(245, 245, 245, 0.6);
   padding: 0px;
 }
