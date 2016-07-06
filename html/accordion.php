@@ -88,33 +88,65 @@
 
 	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }
 */
-	.accordion > ul:hover > li { width: 8%; }
 
-	.accordion > ul:hover > li:hover { width: 60%; }
 
-	.accordion > ul:hover > li:hover a { background: rgba(0, 0, 0, 0.6); }
+	@media screen and (min-width: 950px) {
 
-	.accordion > ul:hover > li:hover a * {
-	opacity: 1;
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
+		.accordion > ul:hover > li { width: 8%; }
+
+		.accordion > ul:hover > li:hover { width: 60%; }
+
+		.accordion > ul:hover > li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+		.accordion > ul:hover > li:hover a * {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+		}
 	}
-	@media screen and (max-width: 950px) {
+
+	@media screen and (max-width: 949px) {
 
 		body { margin: 0; }
 
-		.accordion { height: auto; }
+		.accordion {
+			height: auto;
+			margin: 0 auto;
+		}
 
-		.accordion > ul > li,
-		.accordion > ul > li:hover,
-		.accordion > ul:hover li,
-		.accordion > ul:hover li:hover {
+		.accordion > ul > li {
 			position: relative;
 			display: table;
 			table-layout: fixed;
+			margin: 0 auto;
 			width: 100%;
+			height: 350px;
+			background-size: cover;
+    		background-repeat: no-repeat;
+    		background-position: center;
 			-webkit-transition: none;
 			transition: none;
+		}
+
+		.accordion > ul > li > div > a {
+			background: rgba(0, 0, 0, 0.4);
+			margin: 0 auto;
+			width: 100%
+		}
+
+		.accordion > ul> li > div > a > * {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			
+		}
+
+		.accordion > ul > li > div > a > h6 {
+			top: 110px;
+		}
+
+		.accordion > ul > li > div > a > p, .accordion > ul > li > div > a > ul {
+			top: 126px;
 		}
 	}
 </style>
