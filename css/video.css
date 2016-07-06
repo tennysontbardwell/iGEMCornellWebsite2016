@@ -166,3 +166,18 @@
 		margin-top: 60px;
 	}
 }
+
+@media(min-width: 1700px){
+	.header-placeholder{
+		height: 900px;
+		background-image: url('../resources/header/header_wideAF-webOpt.jpg');
+	}
+
+	.embed-responsive {
+		height: 900px;
+	}
+
+	.header-title {
+		margin-top: 70px;
+	}
+}
