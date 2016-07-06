@@ -63,7 +63,7 @@
 		transition: all 400ms ease;
 	}
 
-	.accordion > ul > li > div > a > h4 {
+	.accordion > ul > li > div > a > h6 {
 		text-overflow: clip;
 		text-transform: uppercase;
 		margin-bottom: 2px;
@@ -72,7 +72,8 @@
 
 	.accordion > ul > li > div > a > p, .accordion > ul > li > div > a > ul {
 		top: 160px;
-		font-size: 13.5px;
+		font-size: 15px;
+    	font-family: proximanova-regular;
 	}
 
 	.accordion > ul > li:nth-child(1) { background-image: url("resources/projects/teamphoto800x350.jpg") }
