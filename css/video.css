@@ -13,7 +13,7 @@
 	height: 50px;
 }
 
-.header-placeholder:hover{
+.header-playbutton:hover{
 	-webkit-transition: -webkit-filter 250ms ease;
 }
 
@@ -26,8 +26,8 @@
     font-size: 60px;
 }
 
-.header-placeholder:hover {
-	-webkit-filter: brightness(90%);
+.header-playbutton:hover {
+	-webkit-filter: brightness(130%);
 }
 
 .header-placeholder > ul{
