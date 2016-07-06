@@ -14,9 +14,9 @@
 		</p>
 		<p>
 			<lu>
-				</lu></p><li>Spring: brainstorm next project and new member training (2 credits, 6-8 hrs/week)</li>
-				<li>Summer: on-campus project work (20+ hrs/week) All new team members are expected to stay in Ithaca over the summer</li>
-				<li>Fall: finish project and compete at iGEM jamborees (3-4 credits, 12-16 hrs/week)</li>
+				</lu></p><li style="margin-left: 20px;">Spring: brainstorm next project and new member training (2 credits, 6-8 hrs/week)</li>
+				<li style="margin-left: 20px;">Summer: on-campus project work (20+ hrs/week) All new team members are expected to stay in Ithaca over the summer</li>
+				<li style="margin-left: 20px;">Fall: finish project and compete at iGEM jamborees (3-4 credits, 12-16 hrs/week)</li>
 			
 		<p></p>
 		<p>
