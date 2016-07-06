@@ -30,7 +30,7 @@
 					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_genscript.png>
 				</div>
 				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
-					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_hardydiagnostics.jpg>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_hardydiagnostics.png>
 				</div>
 				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
 					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_idt.png>
