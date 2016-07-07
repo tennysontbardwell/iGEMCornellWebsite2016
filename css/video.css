@@ -133,7 +133,7 @@
 		display: inline-block;
 		width: 100%;
 		margin-bottom: 10px;
-		margin-left: 10px;
+		
 		margin-right: 10px;
 	}
 		
@@ -157,7 +157,45 @@
 
 	.col-sm-4 {
 		margin: 0 auto;
-		width: 70%
+		width: 85%
+	}
+}
+
+@media(max-width:500px) {
+	.header-playbutton{
+		margin-top: 0;
+		height: 70px;
+	}
+	
+	.header-title {
+		margin-top: 10vw;
+		margin-bottom: 45px;;
+		font-size: 46px;
+	}
+}
+
+@media(max-width:345px) {
+	.header-playbutton{
+		margin-top: 0;
+		height: 50px;
+	}
+	
+	.header-title {
+		margin-top: inherit;
+		margin-bottom: 45px;;
+		font-size: 40px;
+	}
+
+	.header-placeholder{
+		height: 500px;
+	}
+
+	.embed-responsive {
+		height: 500px;
+	}
+	
+	.embed-responsive iframe {
+    	height: 500px;
 	}
 }
 
