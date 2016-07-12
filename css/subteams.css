@@ -14,3 +14,12 @@
 	background-image: linear-gradient(to right,rgba(0,0,0,.1) 0,rgba(0,0,0,1) 100%);
 	margin-bottom: 240px;
 }
+
+#subteams-accordion > ul > li > div > a > h6 {
+	top: 74px;
+}
+
+#subteams-accordion > ul > li > div > a > p,
+#subteams-accordion > ul > li > div > a > ul {
+	top: 90px;
+}

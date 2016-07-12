@@ -3,7 +3,7 @@
 	<h2>Past Projects</h2>
 </section>
 
-<div class="accordion">
+<div id="projects-accordion" class="accordion">
 	<ul>
 		<li style='background-image: url("resources/projects/teamphoto800x350.jpg");'>
 			<div>
