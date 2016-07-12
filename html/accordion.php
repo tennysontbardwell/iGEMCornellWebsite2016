@@ -76,14 +76,6 @@
     	font-family: proximanova-regular;
 	}
 
-	.accordion > ul > li:nth-child(1) { background-image: url("resources/projects/teamphoto800x350.jpg") }
-
-	.accordion > ul > li:nth-child(2) { background-image: url("resources/projects/grass800x350.jpg"); }
-
-	.accordion > ul > li:nth-child(3) { background-image: url("resources/projects/organofoam350x800.jpg"); }
-
-	.accordion > ul > li:nth-child(4) { background-image: url("resources/projects/inriver350.jpg"); }
-
 /*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
 
 	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }

@@ -5,7 +5,7 @@
 
 <div class="accordion">
 	<ul>
-		<li>
+		<li style='background-image: url("resources/projects/teamphoto800x350.jpg");'>
 			<div>
 				<a href="http://2015.igem.org/Team:Cornell">
 					<h6>fishPHARM - 2015</h6>
@@ -17,7 +17,7 @@
 				</a>
 			</div>
 		</li>
-		<li>
+		<li style='background-image: url("resources/projects/grass800x350.jpg");'>
 			<div> <a href="http://2014.igem.org/Team:Cornell">
 				<h6>Lead it Go - 2014</h6>
 				<p>Continuous water filtration system to sequester heavy metals</p>
@@ -26,7 +26,7 @@
 				</ul>
 			</a> </div>
 		</li>
-		<li>
+		<li style='background-image: url("resources/projects/organofoam350x800.jpg");'>
 			<div> <a href="http://2013.igem.org/Team:Cornell")>
 				<h6>Organofoam - 2013</h6>
 				<p>Comprehensive genetic toolkit for fungal engineering</p>
@@ -36,7 +36,7 @@
 				</ul>
 			</a> </div>
 		</li>
-		<li>
+		<li style='background-image: url("resources/projects/inriver350.jpg");'>
 			<div> <a href="http://2012.igem.org/Team:Cornell")>
 				<h6>Safe Bet - 2012</h6>
 				<p>Real-time arsenic biosensor</p>
