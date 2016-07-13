@@ -18,6 +18,7 @@
 }
 
 .team-member{
+	cursor: pointer;
 }
 
 .team-member-photo{
