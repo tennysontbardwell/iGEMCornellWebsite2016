@@ -67,13 +67,25 @@
 		text-overflow: clip;
 		text-transform: uppercase;
 		margin-bottom: 2px;
-		top: 144px;
+		top: 74px;
 	}
 
-	.accordion > ul > li > div > a > p, .accordion > ul > li > div > a > ul {
-		top: 160px;
-		font-size: 15px;
+	.accordion > ul > li > div > a > p {
+		top: 90px;
+		font-size: 16px;
     	font-family: proximanova-regular;
+	}
+
+	.accordion > ul > li > div > a > ul {
+		top: 110px;
+		font-size: 16px;
+    	font-family: proximanova-regular;
+	}
+
+	.accordion > ul > li > div > a > b {
+		top: 100px;
+		font-size: 19px;
+    	font-family: proximanova-bold;
 	}
 
 /*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
@@ -134,12 +146,66 @@
 		}
 
 		.accordion > ul > li > div > a > h6 {
-			top: 110px;
+			top: 84px;
 		}
 
-		.accordion > ul > li > div > a > p, .accordion > ul > li > div > a > ul {
-			top: 126px;
+		.accordion > ul > li > div > a > p {
+			top: 100px;
+		}
+
+		.accordion > ul > li > div > a > ul {
+			top: 120px;
+		}
+
+		.accordion > ul > li > div > a > b {
+			top: 110px;
 		}
 	}
+
+	@media screen and (max-width: 550px) {
+		.accordion > ul > li > div > a > h6 {
+			top: 34px;
+			font-size: 28px;
+		}
+
+		.accordion > ul > li > div > a > p {
+			top: 50px;
+			font-size: 14px;
+		}
+
+		.accordion > ul > li > div > a > ul {
+			top: 70px;
+			font-size: 14px;
+		}
+
+		.accordion > ul > li > div > a > b {
+			top: 60px;
+			font-size: 17px;
+		}
+	}
+
+	/* iPhone 5 */
+	@media screen and (max-width: 350px) {
+		.accordion > ul > li > div > a > h6 {
+			top: 19px;
+			font-size: 28px;
+		}
+
+		.accordion > ul > li > div > a > p {
+			top: 35px;
+			font-size: 13px;
+		}
+
+		.accordion > ul > li > div > a > ul {
+			top: 55px;
+			font-size: 13px;
+		}
+
+		.accordion > ul > li > div > a > b {
+			top: 45px;
+			font-size: 16px;
+		}
+	}
+
 </style>
 <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
