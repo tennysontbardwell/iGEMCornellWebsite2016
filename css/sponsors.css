@@ -9,3 +9,26 @@
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
+
+.panel{
+  border:none;
+  padding:0;
+  border-radius: 0px;
+}
+.panel-heading{
+  border:1px solid #fff;
+  padding:10px;
+  margin:0;
+   border-radius: 0px;
+}
+.panel-body{
+  border:1px solid #fff;
+  padding:10px;
+  border-top:0;
+   border-radius: 0px;
+}
+
+.col-md-3, col-lg-3, col-sm-3, col-xs-3 {
+  min-width: 200px;
+  padding: 15px;
+}
