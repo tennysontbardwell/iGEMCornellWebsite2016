@@ -1,8 +1,8 @@
 .footer {
-	height: 500px;
+	height: 600px;
 	background-image: url("../resources/footer/footer_wide.jpg");
 	background-size: cover;
-	padding-top: 300px;
+	padding-top: 350px;
 }
 
 .footer div{
@@ -40,4 +40,21 @@
 	display: inline;
 	margin-top: -5px;
 	margin-right: 10px;
+}
+
+.credit{
+	margin: 0 auto;
+	margin-top: 20px;
+	font: "proximanova-regular";
+	color: white;
+}
+
+@media (max-width: 550px) {
+	.footer {
+		padding-top: 300px;
+	}
+
+	.credit{
+		padding: 10px;
+	}
 }
