@@ -11,10 +11,21 @@
 	margin-left: auto;
 	margin-right: auto;
 	height: 50px;
+
+	-webkit-filter: brightness(100%);
+	-webkit-transition: 500ms ease;
+	-moz-filter: brightness(100%); 
+	-moz-transition: 500ms ease;
+	-o-filter: brightness(100%); 
+	-o-transition: 500ms ease;
+	filter: brightness(100%);
 }
 
 .header-playbutton:hover{
-	-webkit-transition: -webkit-filter 250ms ease;
+	-webkit-filter: brightness(140%);
+	-moz-filter: brightness(140%);
+	-o-filter: brightness(140%);
+	filter: brightness(140%);
 }
 
 .header-title {
@@ -24,10 +35,6 @@
     max-width: 900px;
     color: white;
     font-size: 60px;
-}
-
-.header-playbutton:hover {
-	-webkit-filter: brightness(130%);
 }
 
 .header-placeholder > ul{
