@@ -8,6 +8,7 @@
 
 .navbar-default{
     box-shadow: -5px 10px 80px rgba(224, 224, 224, 0.70);
+    color: #607D8B;
 }
 
 .navbar-header{
@@ -32,16 +33,24 @@
 }
 
 .navbar-default .navbar-nav>li>a:hover{
+    border-bottom-color: #FF7043;
+    color: #607D8B;
+}
+
+.navbar-nav>li>a{
+    transition: 500ms ease;
+    color: inherit;
     border-bottom-width: initial;
     border-bottom-style: solid;
-    border-bottom-color: #FF7043;
-    color: inherit;
+    border-bottom-color: rgba(255, 255, 255, 0);
+    z-index: 99;
 }
 
 .current-section-header{
     border-bottom-width: initial;
     border-bottom-style: solid;
-    border-bottom-color: rgba(244,67,54,1);
+    border-bottom-color: rgba(244,67,54,1) !important;
+    z-index: 1;
 }
 
 @media (max-width: 960px) {
