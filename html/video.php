@@ -24,13 +24,13 @@
         player.a.style.visibility = 'hidden';
       }
   </script>
-  <div class="header-placeholder" onclick = 'pictureClicked()'>
+  <div class="header-placeholder">
     <ul>
       <li><span>
         <h1 class="header-title">Find out what Cornell’s only synthetic biology team is all about</h1>
       </span></li>
       <li><span>
-        <img class="header-playbutton" src="resources/header/play.png">
+        <img class="header-playbutton" src="resources/header/play.png" onclick = 'pictureClicked()'>
       </span></li>
       <li><span>
         <ul class="header-info-buttons-desktop" style="
