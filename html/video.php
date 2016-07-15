@@ -33,7 +33,9 @@
         <img class="header-playbutton" src="resources/header/play.png">
       </span></li>
       <li><span>
-        <ul class="header-info-buttons-desktop">
+        <ul class="header-info-buttons-desktop" style="
+            margin:  0 auto;
+        ">
           <li><div></div></li>
           <li><div></div></li>
           <li><div></div></li>
