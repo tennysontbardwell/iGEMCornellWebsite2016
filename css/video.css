@@ -217,6 +217,10 @@
 		height: 900px;
 	}
 
+	.embed-responsive iframe {
+    	height: 900px;
+	}
+
 	.header-title {
 		margin-top: 70px;
 	}
@@ -230,6 +234,10 @@
 
 	.embed-responsive {
 		height: 1100px;
+	}
+
+	.embed-responsive iframe {
+    	height: 1100px;
 	}
 
 	.header-title {
