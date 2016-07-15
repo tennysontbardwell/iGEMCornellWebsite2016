@@ -221,3 +221,27 @@
 		margin-top: 70px;
 	}
 }
+
+@media(min-width: 2250px){
+	.header-placeholder{
+		height: 1100px;
+		background-image: url('../resources/header/header_wideAF-webOpt.jpg');
+	}
+
+	.embed-responsive {
+		height: 1100px;
+	}
+
+	.header-title {
+		margin-top: 100px;
+	}
+
+	.header-playbutton {
+		margin-top: 50px;
+	}
+
+	.header-info-buttons-desktop > li > div{
+		margin-top: 100px;
+	}
+}
+
