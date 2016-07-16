@@ -11,12 +11,6 @@
 	background-color: #f2f2f2;
 }
 
-.col-xs-2 {
-    width: 16.66666667%;
-    margin-bottom: 30px;
-    min-width: 150px;
-}
-
 .team-member{
 	cursor: pointer;
 }
