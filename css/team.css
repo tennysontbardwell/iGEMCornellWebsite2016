@@ -34,3 +34,7 @@
 .selected-team-member{
 	border:thick solid #8c8c8c;
 }
+
+.col-xs-2 {
+	margin-bottom: 30px;
+}
