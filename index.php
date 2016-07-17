@@ -19,11 +19,11 @@
 	?>
 	<!-- End development -->
 	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#607d8b">
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="resources/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="resources/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="resources/favicons/manifest.json">
+	<link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#607d8b">
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
