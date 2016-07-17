@@ -29,6 +29,21 @@
 }
 
 .col-md-3, col-lg-3, col-sm-3, col-xs-3 {
-  min-width: 200px;
+  min-width: 160px;
   padding: 15px;
+  margin: 0 auto;
+}
+
+/**Galaxy S5**/
+@media (max-width: 360px) {
+	.col-md-3, col-lg-3, col-sm-3, col-xs-3 {
+		min-width: 150px;
+	}
+}
+
+/**iPhone 5**/
+@media (max-width: 320px) {
+	.col-md-3, col-lg-3, col-sm-3, col-xs-3 {
+		min-width: 132px;
+	}
 }
