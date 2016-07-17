@@ -38,3 +38,11 @@
 .col-xs-2 {
 	margin-bottom: 30px;
 }
+
+@media (max-width: 500px) {
+	.col-xs-2 {
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-bottom: 6px;
+	}
+}
