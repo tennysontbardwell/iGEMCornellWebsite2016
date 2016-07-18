@@ -24,15 +24,15 @@
     left:15px;
     right:15px;
 	position: absolute;
-	-webkit-transition: all 250ms ease;
+	transition: all 250ms ease;
 }
 
 .team-member-mouseover-box:hover{
-	background: rgba(0,0,0,.4);
+	background: rgba(96,125,139,.4);
 }
 
 .selected-team-member{
-	border:thick solid #8c8c8c;
+	border:thin solid #607d8b;
 }
 
 .col-xs-2 {
