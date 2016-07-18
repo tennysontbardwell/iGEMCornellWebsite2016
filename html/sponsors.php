@@ -2,14 +2,13 @@
 	<div class="panel panel-default">
 		<!-- <div class="panel-heading"> -->
 			<div id="sponsors" class="section-header-javascriptTarget">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSponsors" style="text-decoration: none;">
-					<h2>Sponsors
-
-							<img src="resources/sponsors/expand.png" height="48" style="max-width:100px; margin-top: -2px;">
-						
-					</h2>
-			</a>
+				<a id="toggle" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSponsors" style="text-decoration: none;">
+						<h2>Sponsors
+								<img id="icon" class="arrow" src="resources/sponsors/expand.png" height="48" style="max-width:100px; margin-top: -2px;">
+						</h2>
+				</a>
 			</div>
+			
 		<!-- </div> -->
 		<div class="container">
 		</div>
@@ -77,3 +76,21 @@
 		
 	</div>
 </div>
+
+<script>
+	(function(document){
+		var div = document.getElementById('toggle');
+		var icon = document.getElementById('icon');
+		var open = false;
+
+		div.addEventListener('click', function(){
+			if(open){
+			icon.className = 'arrow';  
+			} else{
+			icon.className = 'arrow open';
+			}
+
+			open = !open;
+		});
+	})(document);
+</script>
