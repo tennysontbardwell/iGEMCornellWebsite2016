@@ -4,22 +4,28 @@ var callsSoFar = {
 	'video': false,
 	'picture': false
 };
+
 function maybePlayVideo(caller){
 	var c = callsSoFar;
 	callsSoFar[caller] = true;
-	player.playVideo();
-	// if (callsSoFar['video'] && callsSoFar['picture']){
-	// }
+	if (callsSoFar.video && callsSoFar.picture){
+		return true;
+	}
 }
 
 function onPlayerReady(event) {
-	maybePlayVideo('video');
+	var play = maybePlayVideo('video');
 	player.playVideo();
-	player.pauseVideo();
+	if (!play){
+		player.pauseVideo();
+	}
 }
 
 function pictureClicked(){
-	maybePlayVideo('picture');
-	player.a.style.display = 'block';
 	$('.header-placeholder')[0].style.visibility = 'hidden';
+	var play = maybePlayVideo('picture');
+	if (play){
+		player.a.style.display = 'block';
+		player.playVideo();
+	}
 }

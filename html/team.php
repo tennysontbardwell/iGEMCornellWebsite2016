@@ -45,7 +45,7 @@ function getWrappedBio(bioNum){
 		foreach($files as $file) {
 			echo
 				"<div id='bioholder_$x' onclick='collapseAllBut($x)'>
-					<div class='col-md-2 col-lg-2 col-sm-4 col-xs-6'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
 						<div class='team-member'>
 							<div class='team-member-mouseover-box'>
 							</div>

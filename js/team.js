@@ -18,10 +18,10 @@ function teamSectionSetup(){
 function getperrow(){
 	var size = findBootstrapEnvironment();
 	if( size === 'xs' ) {
-	    return 2;
+	    return 3;
 	}
 	if( size === 'sm' ) {
-	    return 3;
+	    return 6;
 	}
 	if( size === 'md' ) {
 	    return 6;

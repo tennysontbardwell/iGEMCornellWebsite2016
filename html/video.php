@@ -21,7 +21,6 @@
             'onReady': onPlayerReady,
           }
         });
-        console.log(player.a.style);
         player.a.style.display = 'none';
       }
   </script>
