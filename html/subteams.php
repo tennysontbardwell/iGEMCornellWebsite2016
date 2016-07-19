@@ -1,6 +1,8 @@
 <div class="page-section container-fluid">
+<div class="wrapper">
 <div id="subteams" class="section-header-javascriptTarget">
     <h2>Sub Teams</h2>
+</div>
 </div>
 <div id="subteams-accordion" class="accordion">
   <ul>

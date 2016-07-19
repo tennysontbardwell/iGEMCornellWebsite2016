@@ -6,6 +6,8 @@
 		height: 350px;
 		overflow: hidden;
 		margin: 50px auto;
+		padding-top:10px;
+		padding-bottom:10px; 
 	}
 
 	.accordion > ul {

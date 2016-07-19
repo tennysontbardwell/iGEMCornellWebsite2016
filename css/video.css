@@ -108,6 +108,7 @@
 .embed-responsive iframe {
     height: 750px;
 }
+
 @media(max-width: 1050px){
 	.header-playbutton{
 		margin-top: 3vw;
@@ -142,13 +143,13 @@
 	.embed-responsive {
 		position: relative;
 		display: block;
-		height: 600px;
+		height: 580px;
 		padding: 0;
 		overflow: hidden;
 	}
 	
 	.embed-responsive iframe {
-    	height: 600px;
+    	height: 540px;
 	}
 }
 
@@ -193,11 +194,11 @@
 	}
 
 	.embed-responsive {
-		height: 500px;
+		height: 490px;
 	}
 	
 	.embed-responsive iframe {
-    	height: 500px;
+    	height: 450px;
 	}
 }
 

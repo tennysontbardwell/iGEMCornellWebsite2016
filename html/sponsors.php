@@ -1,3 +1,4 @@
+<div class="wrapper">
 <div class="panel-group" id="accordion">
 	<div class="panel panel-default">
 		<!-- <div class="panel-heading"> -->
@@ -75,6 +76,7 @@
 		</div></div>
 		
 	</div>
+</div>
 </div>
 
 <script>

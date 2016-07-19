@@ -1,5 +1,6 @@
 <div class="page-section container-fluid">
 <a name="aboutus" id="aboutus" class="anchor"></a>
+<div class="wrapper">
 <section class="section-header-javascriptTarget">
 	<h2>About Us</h2>
 </section>
@@ -11,4 +12,5 @@
 		</p>
 	</big>
 </section>
+</div>
 </div>

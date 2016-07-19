@@ -1,7 +1,9 @@
 <a name="projects" id="projects" class="anchor"></a>
+<div class="wrapper">
 <section class="section-header-javascriptTarget">
 	<h2>Past Projects and Achievements</h2>
 </section>
+</div>
 
 <div id="projects-accordion" class="accordion">
 	<ul>
@@ -51,4 +53,5 @@
 			</a> </div>
 		</li>
 	</ul>
+
 </div>

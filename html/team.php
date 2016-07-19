@@ -26,9 +26,11 @@ function getWrappedBio(bioNum){
 			+ "\n</div>";
 }
 </script>
+<div class="wrapper">
 <section id="team" class="section-header-javascriptTarget">
 	<h2>Our Team</h2>
 </section>
+</div>
 <div class="container">
 </div>
 <div class="container">
