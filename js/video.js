@@ -7,9 +7,9 @@ var callsSoFar = {
 function maybePlayVideo(caller){
 	var c = callsSoFar;
 	callsSoFar[caller] = true;
-	if (callsSoFar['video'] && callsSoFar['picture']){
-		player.playVideo();
-	}
+	player.playVideo();
+	// if (callsSoFar['video'] && callsSoFar['picture']){
+	// }
 }
 
 function onPlayerReady(event) {
@@ -20,6 +20,6 @@ function onPlayerReady(event) {
 
 function pictureClicked(){
 	maybePlayVideo('picture');
-	player.a.style.visibility = 'visible';
+	player.a.style.display = 'block';
 	$('.header-placeholder')[0].style.visibility = 'hidden';
 }

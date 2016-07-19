@@ -21,10 +21,11 @@
             'onReady': onPlayerReady,
           }
         });
-        player.a.style.visibility = 'hidden';
+        console.log(player.a.style);
+        player.a.style.display = 'none';
       }
   </script>
-  <div class="header-placeholder">
+  <div class="header-placeholder" onclick='pictureClicked()'>
     <ul>
       <li><span>
         <h1 class="header-title">Find out what Cornell’s only synthetic biology team is all about</h1>
