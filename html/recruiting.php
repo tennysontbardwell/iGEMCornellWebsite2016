@@ -21,7 +21,8 @@
 			
 		<p></p>
 		<p>
-			We ask applicants to submit a resume to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team">cornelligem@gmail.com</a>. We will also look at any provided supplemental materials and conduct interviews before deciding on new members.
+			<!-- We ask applicants to submit a resume to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team">cornelligem@gmail.com</a>. We will also look at any provided supplemental materials and conduct interviews before deciding on new members. -->
+			We will be posting the application here during recruitment season.
 		</p>
 		<p>
 			If you have any questions, feel free to send them to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team%20Questions">cornelligem@gmail.com</a>.
