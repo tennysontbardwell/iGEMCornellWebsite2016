@@ -17,6 +17,6 @@
 		</ul>
 	</div>
 	<div class='credit'>
-			<p>© Cornell iGEM | Designed By: Rishabh Singh and Tennyson Bardwell</p>
+			<p>© Cornell iGEM | Designed By: Tennyson Bardwell and Rishabh Singh</p>
 	</div>
 </div>
