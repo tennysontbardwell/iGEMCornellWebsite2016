@@ -1,4 +1,5 @@
 <div class="page-section container-fluid">
+<div class="wrapper">
 <section id="recruiting" class="section-header-javascriptTarget">
 	<h2>Recruiting</h2>
 </section>
@@ -27,4 +28,5 @@
 		</p>
 	</big>
 </section>
+</div>
 </div>
