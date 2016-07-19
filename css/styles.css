@@ -89,11 +89,21 @@ a.anchor {
   .col-md-6 {
       width: 100%
   }
+
+  .wrapper{
+    max-width: 960px; 
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1200px) {
   .col-lg-6 {
       width: 100%; 
+  }
+
+  .wrapper{
+    max-width: 1200px; 
+    margin: 0 auto;
   }
 }
 
@@ -108,4 +118,3 @@ a.anchor {
       margin-left: 0px;
   }
 }
-
