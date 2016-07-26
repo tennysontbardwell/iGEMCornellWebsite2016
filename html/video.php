@@ -1,7 +1,5 @@
 <script src="js/video.js<?php bustCache()?>"></script>
 <div id="video-wrapper" align="center" class="row full-width embed-responsive embed-responsive-16by9">
-  <!-- <iframe id="video-iframe" src="https://www.youtube.com/embed/zq_KKnycgs8?autoplay=1;enablejsapi=1;rel=0" frameborder="0" allowfullscreen>
-  </iframe> -->
   <div id="player"></div>
   <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -16,7 +14,7 @@
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          videoId: 'zq_KKnycgs8',
+          videoId: 'FwZYu6bpJmc',
           events: {
             'onReady': onPlayerReady,
           }
