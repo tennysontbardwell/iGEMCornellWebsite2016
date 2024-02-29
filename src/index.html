@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8"
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- For devleopment, bust cache -->
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+		<!-- End development -->
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="resources/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="resources/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="resources/favicons/manifest.json">
+	<link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#607d8b">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css?1709185189">
+	<link rel="stylesheet" href="css/aboutigem.css?1709185189">
+	<link rel="stylesheet" href="css/achievements.css??1709185189">
+	<link rel="stylesheet" href="css/footer.css?1709185189">
+	<link rel="stylesheet" href="css/navbar.css?1709185189">
+	<link rel="stylesheet" href="css/projects.css?1709185189">
+	<link rel="stylesheet" href="css/sponsors.css?1709185189">
+	<link rel="stylesheet" href="css/subteams.css?1709185189">
+	<link rel="stylesheet" href="css/team.css?1709185189">
+	<link rel="stylesheet" href="css/video.css?1709185189">
+	<!-- http://www.cssscript.com/demo/pure-css-responsive-horizontal-accordion/ -->
+<style class="cp-pen-styles">
+	.accordion {
+		width: 100%;
+		max-width: 1080px;
+		height: 350px;
+		overflow: hidden;
+		margin: 50px auto;
+		padding-top:10px;
+		padding-bottom:10px; 
+	}
+
+	.accordion > ul {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+		margin: 0;
+		padding: 0;
+	}
+
+	.accordion > ul > li {
+		display: table-cell;
+		vertical-align: bottom;
+		position: relative;
+		width: 16.666%;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		transition: all 500ms ease;
+	}
+
+	.accordion > ul > li > div {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.accordion > ul > li > div > a {
+		display: block;
+		height: 350px;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		vertical-align: bottom;
+		padding: 15px 20px;
+		box-sizing: border-box;
+		color: #fff;
+		text-decoration: none;
+		font-family: proximanova-light;
+		transition: all 200ms ease;
+	}
+
+	.accordion > ul > li > div > a > * {
+		opacity: 0;
+		margin: 0;
+		width: 100%;
+		text-overflow: ellipsis;
+		position: relative;
+		z-index: 5;
+		/*white-space: nowrap;*/
+		overflow: hidden;
+		-webkit-transform: translateX(-20px);
+		transform: translateX(-20px);
+		-webkit-transition: all 400ms ease;
+		transition: all 400ms ease;
+	}
+
+	.accordion > ul > li > div > a > h6 {
+		text-overflow: clip;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+		top: 74px;
+	}
+
+	.accordion > ul > li > div > a > p {
+		top: 90px;
+		font-size: 16px;
+    	font-family: proximanova-regular;
+	}
+
+	.accordion > ul > li > div > a > ul {
+		top: 110px;
+		font-size: 16px;
+    	font-family: proximanova-regular;
+	}
+
+	.accordion > ul > li > div > a > b {
+		top: 100px;
+		font-size: 19px;
+    	font-family: proximanova-bold;
+	}
+
+/*	.accordion ul li:nth-child(5) { background-image: url("resources/placeholders/dog.jpg"); }
+
+	.accordion ul li:nth-child(6) { background-image: url("resources/placeholders/dog.jpg"); }
+*/
+
+
+	@media screen and (min-width: 950px) {
+
+		.accordion > ul:hover > li { width: 8%; }
+
+		.accordion > ul:hover > li:hover { width: 60%; }
+
+		.accordion > ul:hover > li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+		.accordion > ul:hover > li:hover a * {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+		}
+	}
+
+	@media screen and (max-width: 949px) {
+
+		body { margin: 0; }
+
+		.accordion {
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.accordion > ul > li {
+			position: relative;
+			display: table;
+			table-layout: fixed;
+			margin: 0 auto;
+			width: 100%;
+			height: 350px;
+			background-size: cover;
+    		background-repeat: no-repeat;
+    		background-position: center;
+			-webkit-transition: none;
+			transition: none;
+		}
+
+		.accordion > ul > li > div > a {
+			background: rgba(0, 0, 0, 0.4);
+			margin: 0 auto;
+			width: 100%
+		}
+
+		.accordion > ul> li > div > a > * {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+			
+		}
+
+		.accordion > ul > li > div > a > h6 {
+			top: 84px;
+		}
+
+		.accordion > ul > li > div > a > p {
+			top: 100px;
+		}
+
+		.accordion > ul > li > div > a > ul {
+			top: 120px;
+		}
+
+		.accordion > ul > li > div > a > b {
+			top: 110px;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		.accordion > ul > li > div > a > h6 {
+			top: 34px;
+			font-size: 28px;
+		}
+
+		.accordion > ul > li > div > a > p {
+			top: 50px;
+			font-size: 14px;
+		}
+
+		.accordion > ul > li > div > a > ul {
+			top: 70px;
+			font-size: 14px;
+		}
+
+		.accordion > ul > li > div > a > b {
+			top: 60px;
+			font-size: 17px;
+		}
+	}
+
+	/* iPhone 5 */
+	@media screen and (max-width: 350px) {
+		.accordion > ul > li > div > a > h6 {
+			top: 19px;
+			font-size: 28px;
+		}
+
+		.accordion > ul > li > div > a > p {
+			top: 35px;
+			font-size: 13px;
+		}
+
+		.accordion > ul > li > div > a > ul {
+			top: 55px;
+			font-size: 13px;
+		}
+
+		.accordion > ul > li > div > a > b {
+			top: 45px;
+			font-size: 16px;
+		}
+	}
+
+</style>
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">	<title>Cornell iGEM</title>
+</head>
+<body>
+	<!-- Navagation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="javascript:window.location.href=window.location.href"><img class="logo" src="resources/logo/Logo-Colored.png"></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a id="navbar-aboutus" onclick="scrollToElem('aboutus')">About Us</a></li>
+				<li><a id="navbar-subteams" onclick="scrollToElem('subteams')">Sub Teams</a></li>
+				<li><a id="navbar-team" onclick="scrollToElem('team')">Members</a></li>
+				<li><a id="navbar-recruiting" onclick="scrollToElem('recruiting')">Recruiting</a></li>
+				<li><a id="navbar-sponsors" onclick="scrollToElem('sponsors')">Sponsors</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<div style="height:66px"></div>	<!-- Video Section -->
+	<script src="js/video.js?1709185189"></script>
+<div id="video-wrapper" align="center" class="row full-width embed-responsive embed-responsive-16by9">
+  <div id="player"></div>
+  <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'FwZYu6bpJmc',
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+        player.a.style.display = 'none';
+      }
+  </script>
+  <div class="header-placeholder" onclick='pictureClicked()'>
+    <ul>
+      <li><span>
+        <h1 class="header-title">Find out what Cornell’s only synthetic biology team is all about</h1>
+      </span></li>
+      <li><span>
+        <img class="header-playbutton" src="resources/header/play.png" onclick = 'pictureClicked()'>
+      </span></li>
+      <li><span>
+        <ul class="header-info-buttons-desktop" style="
+            margin:  0 auto;
+        ">
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+        </ul>
+      </span></li>
+    </ul>
+  </div>
+</div>
+<div id="video-bottom"></div>
+<div class="container header-info-buttons-mobile">
+  <div class="col-sm-4">
+    <img class="img-responsive" src="resources/header/button_WL_col.png" style="
+        padding-bottom: 40px;
+    ">
+  </div>
+  <div class="col-sm-4">
+    <img class="img-responsive" src="resources/header/button_DL_col.png" style="
+        padding-bottom: 40px;
+    ">
+  </div>
+  <div class="col-sm-4">
+    <img class="img-responsive" src="resources/header/button_PP_col.png" style="
+        padding-bottom: 40px;
+    ">
+  </div>
+</div>
+
+	<!-- Various Sections -->
+		<div class="page-section container-fluid">
+<a name="aboutus" id="aboutus" class="anchor"></a>
+<div class="wrapper">
+<section class="section-header-javascriptTarget">
+	<h2>About Us</h2>
+</section>
+<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8" style='margin-bottom: 50px;'>
+	<big>
+		<p>The Cornell iGEM Team is comprised of 32 brilliant and creative undergraduate students motivated to save the world through synthetic biology. The team is comprised of five subteams: Wet Lab, Product Development, CS/ECE Design, Policy and Practices, and Business. The team works tirelessly throughout the school year and summer to solve local and global problems related to medical applications, environmental concerns, and human and animal health. We then compete against 280 multidisciplinary teams from all around the world at the iGEM World Jamboree hosted annually by the International Genetically Engineered Machine (iGEM) Foundation.
+		</p>
+		<p>Check out the Cornell iGEM Team, 2015 winner of Gold, Best Environmental, Best Supporting Entrepreneurship, and Best Applied Design against 280 other international university teams!
+		</p>
+	</big>
+</section>
+</div>
+</div>
+	<a name="projects" id="projects" class="anchor"></a>
+<div class="wrapper">
+<section class="section-header-javascriptTarget">
+	<h2>Past Projects and Achievements</h2>
+</section>
+</div>
+
+<div id="projects-accordion" class="accordion">
+	<ul>
+		<li style='background-image: url("resources/projects/teamphoto800x350.jpg");'>
+			<div>
+				<a href="http://2015.igem.org/Team:Cornell">
+					<h6>fishPHARM - 2015</h6>
+					<p>Novel drug delivery system and probiotic treatment for Bacterial Coldwater Disease and app for monitoring nutrient content in fish hatcheries</p>
+					<b>Achievements</b>
+					<ul>
+						<li>Achieved gold medal for fifth consecutive year</li>
+						<li>Won Best Supporting Entrepreneurship, Best Environmental Project, and Best Applied Design</li>
+					</ul>
+				</a>
+			</div>
+		</li>
+		<li style='background-image: url("resources/projects/grass800x350.jpg");'>
+			<div> <a href="http://2014.igem.org/Team:Cornell">
+				<h6>Lead it Go - 2014</h6>
+				<p>Continuous water filtration system to sequester heavy metals</p>
+				<b>Achievements</b>
+				<ul>
+					<li>Achieved gold medal classification for fourth consecutive year in iGEM</li>
+				</ul>
+			</a> </div>
+		</li>
+		<li style='background-image: url("resources/projects/organofoam350x800.jpg");'>
+			<div> <a href="http://2013.igem.org/Team:Cornell")>
+				<h6>Organofoam - 2013</h6>
+				<p>Comprehensive genetic toolkit for fungal engineering</p>
+				<b>Achievements</b>
+				<ul>
+					<li>Won Best Human Practices Advance at North American iGEM competition</li>
+					<li>Won Best Human Practices Advance at iGEM international competition</li>
+				</ul>
+			</a> </div>
+		</li>
+		<li style='background-image: url("resources/projects/inriver350.jpg");'>
+			<div> <a href="http://2012.igem.org/Team:Cornell")>
+				<h6>Safe Bet - 2012</h6>
+				<p>Real-time arsenic biosensor</p>
+				<b>Achievements</b>
+				<ul>
+					<li>Awarded top 4 finalist regionally, won Best Wiki and Best Human Practices Advance awards</li>
+					<li>Top 16 finalist worldwide, won “Best Solution to an Oil Sands Problem” from the Oil Sands Leadership Initiative</li>
+				</ul>
+			</a> </div>
+		</li>
+	</ul>
+
+</div>
+		<div class="page-section container-fluid">
+<div class="wrapper">
+<div id="subteams" class="section-header-javascriptTarget">
+    <h2>Sub Teams</h2>
+</div>
+</div>
+<div id="subteams-accordion" class="accordion">
+  <ul>
+    <li style='background-image: url("resources/subteams/wetlab1440x470.jpg");'>
+      <div>
+        <a>
+          <h6>Wet Lab</h6>
+          <p>The wet lab subteam integrates myriad ideas and subjects them to rigorous testing and analysis. Using the most advanced techniques in molecular biology and biochemistry, we design novel experiments to purify our therapeutics, to assess their efficacy, and to test their stability. We are committed to making contributions to synthetic biology through the heterologous expression and the characterization of proteins that remain poorly understood.</p>
+        </a>
+      </div>
+    </li>
+    <li style='background-image: url("resources/subteams/business1440x470.jpg");'>
+      <div> <a>
+        <h6>Business</h6>
+        <p>The business subteam has two primary roles within Cornell iGEM. First, we establish partnerships and sponsorship with many outside organizations to ensure that the project is financially viable. Second, each year we evaluate the marketability of our project and consider applications of our project to improve existing industry. Our coordination with sponsors and development of business models for Cornell iGEM positions us as the fiscal backbone of the team, helping to bring the team’s project ideas to reality.</p>
+      </a> </div>
+    </li>
+    <li style='background-image: url("resources/subteams/drylab1440x470.jpg");'>
+      <div> <a>
+        <h6>Product Development</h6>
+        <p>The product development subteam is an end-to-end product development team that is user centered and engineering focused, with the end goal of bringing Cornell iGEM's biological engineering technology to the real world. We apply design thinking and various engineering disciplines to explore user needs, generate a problem statement, design and prototype a mechanical solution to the problem, and create product specifications and prepare for manufacture.</p>
+      </a> </div>
+    </li>
+    <li style='background-image: url("resources/subteams/outreach1440x470.jpg");'>
+      <div> <a>
+        <h6>Policy and Practices</h6>
+        <p>The Policy and Practices subteam contextualizes Cornell iGEM's genetic engineering projects and examines its impact through community engagement and collaborations. The subteam coordinates outreach events such as youth mentorship programs, forums, and expos. Policy and Practices also analyzes policies, and connects those who are familiar and unfamiliar to our project. Through interviews with field experts and interactions with the public, we are reminded that the people we meet always have stories to tell. We aim to share our story with them, too.</p>
+      </a> </div>
+    </li>
+    <li style='background-image: url("resources/subteams/cs1440x470.jpg");'>
+      <div> <a>
+        <h6>CS/ECE Design</h6>
+        <p>The CS/ECE Design Team (Computer Science/Electrical and Computer Engineering) operates at the fusion of synthetic biology and technology.  The team works closely with Product Development in the research and design phases and spearheads all the coding and electrical engineering components of the dry lab product that take our project to the next level.  This includes developing smartphone apps, environmental monitoring systems, and biosensor technology.  In addition, the CS/ECE Design Team creates the competition wiki page and sponsorship video.</p>
+      </a> </div>
+    </li>
+  </ul>
+</div>
+</div>
+	<script>
+function getHTMLStringForBio(bioNum){
+	if (bioNum == 0) { return "<h2>Saie Ganoo | Team Lead\n<a href=\"http:\/\/linkedin.com\/in\/saie-ganoo-9922bb109\">\n\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n<\/a>\n<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p>Hello! My name is Saie Ganoo, and I am junior in Biological Engineering. I love the Ithacan outdoors and love this wonderful iGEM team of scientists, innovators, and connectors. Currently, I am involved with research on campus outside of the team as well as the Cornell Hindu Student Council as VP. You can find me on North Campus during the year as an Resident Advisor (RA) and napping outside on a quad during a lovely summer day!  In the future, I would love to continue work in Biomedical Engineering and Materials Science Engineering research fields, and I plan on continuing my education in graduate school.<\/p>\n"};
+if (bioNum == 1) { return "<h2>Yi Fan Chen | Wet Lab Lead\n\t<a href=\"https:\/\/www.linkedin.com\/in\/yfchen1\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Agriculture and Life Sciences ('18)<\/h4>\n<h4>Major: Biological Sciences<\/h4>\n<p>Yi Fan is a junior majoring in biological sciences with a strong passion for organic chemistry and physics. His research interest lies in the regulatory and catalytic mechanisms of vesicular trafficking at the Golgi Apparatus. When he is not in class or pipetting away in lab, Yi Fan works as an organic chemistry tutor and is also actively involved in the Aikido Club as its president. In addition, he enjoys experimenting with cooking, treating his ingredients the way scientists treat their samples. In the future, Yi Fan hopes to become a physician-scientist. He would like to make a difference in the lives of patients while also contributing to the development of more effective treatments at the frontier of science and medicine. Fun fact: he used to own pet silkworms.<\/p>"};
+if (bioNum == 2) { return "<h2>Grace Chuang | Policy and Practice Lead\n\t<a href=\"https:\/\/www.linkedin.com\/in\/gracechuang1\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Chemical Engineering<\/h4>\n<p>Amazing Grace, how sweet the sound,<br>\nThat miniprepped in the AM for me.<\/p>\n<p>While she is a bubbling spirit in the lab and a friend in our hearts, Grace is not a force to be reckoned with. Whether it\u2019s an adamant army of ants raiding her kitchen or plasmids refusing to cooperate, Chief Chuang is always ready to take on any challenge. An active member of CRU and close friends with Bill Nye the science dude, Grace is basically a manifestation of the positivity and friendliness exuded by a playful breeze on an Ithacan summer\u2019s day. Her loyalty, however, isn\u2019t fickle like the winds of the Northeast; rather, she finds herself at all hours tirelessly working in the lab, often jamming to numerous sick beats, until we have to physically kidnap her and dose her with Starbucks to bring her back to the real world. She co-leads the Policy and Practices subteam and is ready to cure the world\u2019s diseases. A master of photography, you can find this kind soul wandering through gardens and Farmer\u2019s Markets, trying to catch the sunlight in just the right way, before she captures an image only surpassed by a Van Gogh.<\/p>"};
+if (bioNum == 3) { return "<h2>Sachiye Koide | CS\/ECE Lead\n\t<a href=\"http:\/\/linkedin.com\/in\/sachiye-koide-374847117\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p>Sachiye is a biological engineer from Los Gatos, California, class of 2018.  She is fascinated with biophysics and biomaterials and wants to work on veterinary medical devices (and Cornell iGEM has been the perfect place to explore this field!)  When not in the lab or staring at a computer screen, Sachiye is the Section Leader of the Horns in the Cornell Big Red Marching Band, an orientation leader, a Science Olympiad coach for the local elementary schools, and an enthusiastic hiker and runner!<\/p>"};
+if (bioNum == 4) { return "<h2>Gargi Ratnaparkhi<\/h2>\n<h4>College: Engineering ('17)<\/h4>\n<h4>Major: Electrical & Computer Engineering<\/h4>\n<p><\/p>"};
+if (bioNum == 5) { return "<h2>George Danias | Project Development Lead<\/h2>\n<h4>College: Engineering ('17)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p><\/p>"};
+if (bioNum == 6) { return "<h2>Reed Geisler<\/h2>\n<h4>College: Arts and Scienes ('17)<\/h4>\n<h4>Major: Chemistry, Biology, M.Eng. Biomedical Engineering<\/h4>\n<p><\/p>"};
+if (bioNum == 7) { return "<h2>Rishabh Singh | Design & Marketing Chair\n    <a href=\"https:\/\/www.linkedin.com\/in\/rishabhsingh95\">\n\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n<\/a>\n<\/h2>\n<h4>College: Engineering ('17)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n\n<p>\nRishabh is a senior majoring in Biological Engineering with plans to attend medical school in the future. But first, he plans to spend a gap year after graduating exploring the intersection of his engineering background and medical interest through biotechnology work. Around campus, he is involved in the Cardiovascular Bioengineering Lab, the Phi Delta Epsilon medical fraternity, eMed, and is a teaching assistant for biochemistry (BIOMG 3300). <\/p>\n\n<p>Dubbed our, \"Design Queen,\" he creates much of our branding\/outreach content and also leads UX\/UI design for our website and mobile applications. <\/p>"};
+if (bioNum == 8) { return "<h2>Casey Zhang<\/h2>\n<h4>College: Arts and Scienes ('17)<\/h4>\n<h4>Major: Biological Sciences<\/h4>\n<p>If Casey were a Pokemon, she would be Jigglypuff. Found in the lush green plains between Route 115 and Ithaca, Casey\u2019s charm is super effective against any foe. Her special abilities include captivating bystanders with her huge round eyes, and lulling the manliest of men to sleep with her gentle lullaby. Her friendly nature makes her the ideal Wetlab team member. After a tragic accident covered the floors of Weill in blue loading dye, legend has it that she spent countless nights scrubbing the mile long hall with a single paper towel. Casey draws her positivity from her diet consisting of baked goods and bibimbap burritos. On one unfortunate occasion, she was poisoned with a Jalapeno pepper hidden deep within an enchilada. Witnesses say that she swelled to a round pink ball and to this day she maintains a deep-seated aversion to anything spicy. Although this remains her sole weakness, Casey\u2019s copious strengths allow her to lead a team of less evolved Igglybuffs, all of whom would be nowhere without her.<\/p>"};
+if (bioNum == 9) { return "<h2>Jonlin Chen\n\t<a href=\"https:\/\/www.linkedin.com\/in\/jonlin-chen-727062a2\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('17)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p>Bioengineering, 2017, Working in Hernandez biomechanics lab, involved in Kessler Fellows, Phi Delta Epsilon Fraternity, Society of Women Engineers (SWE). Fun fact: Went sandboarding in Peru last semester.<\/p>"};
+if (bioNum == 10) { return "<h2>Tara Chari<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p style=\"padding-bottom: 10px\">package CUiGEM;<p>\n\n<p style=\"padding-bottom: 10px\">public class Tara extends CS2110Crew {<\/p>\n\n<p style=\"margin: 0; padding-left: 40px\">private String location;<\/p>\n<p style=\"margin: 0; padding-left: 40px\">private int amtOfHate;<\/p>\n<p style=\"margin: 0; padding-left: 40px\">private String year;<\/p>\n<p style=\"margin: 0; padding-left: 40px\">private boolean hatesGnomes;<\/p>\n<p style=\"padding-bottom: 10px; padding-left: 40px\">static int hrsInDuffield;<\/p>\n\n<p style=\"margin: 0; padding-left: 40px\">public Tara() {<\/p>\n<p style=\"padding-left: 80px; margin: 0\">hrsInDuffield = 0;<\/p>\n<p style=\"padding-left: 80px; margin: 0;\">amtOfHate = 0;<\/p>\n<p style=\"padding-left: 80px; margin: 0;\">hatesGnomes = false;<\/p>\n<p style=\"margin: 0; padding-left: 40px\">}<\/p>\n\n<p style=\"margin: 0; padding-left: 40px\">public String WhereInTheWorldIsTaraChari() {<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( hella && avocados ) { location = \"California\"; }<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( problemSets && hillsOnHillsOnHills ) { location = \"Ithaca\"; }<\/p>\n<p style=\"margin: 0; padding-left: 80px\">return location;<\/p>\n<p style=\"margin-bottom: 10px; padding-left: 40px\">}<\/p>\n\n<p style=\"margin: 0; padding-left: 40px\">public void TrappedInDuffieldForever() {<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( psetDue ) { hrsInDuffield += 3; }<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( prelimSoon ) { hrsInDuffield += 6; }<\/p>\n<p style=\"margin: 0; padding-left: 80px\">while ( finalsWeek ) { hrsInDuffied = Integer.MAX_VALUE; }<\/p>\n<p style=\"margin-bottom: 10px; padding-left: 40px\">}<\/p>\n\n<p style=\"margin: 0; padding-left: 40px\">public void gnomeStatus() {<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( tookCS2110ThisSummer ) { hatesGnomes = true; }<\/p>\n<p style=\"margin-bottom: 10px; padding-left: 40px\">}<\/p>\n\n<p style=\"margin: 0; padding-left: 40px\">public void HowMuchDoesTaraHateTheSightOfWeillToday() {<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( has20MiniprepsWaitingForHer ) { amtOfHate = 9; }<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( cravingGrilledCheese ) { amtOfHate = -3; }<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( sequencingCameBackRight ) { amtOfHate = -100}<\/p>\n<p style=\"margin: 0; padding-left: 80px\">if ( constructsDueTomorrow ) { amtOfHate = 10000; }<\/p>\n<p style=\"margin-bottom: 10px; padding-left: 40px\">}<\/p>\n\n}<\/p>"};
+if (bioNum == 11) { return "<h2>Jeremy Fidock\n\t<a href=\"https:\/\/www.linkedin.com\/in\/jeremy-fidock-91765558?trk=hp-identity-photo\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('17)<\/h4>\n<h4>Major: Biomechanical Engineering<\/h4>\n<p>I am a Mechanical Engineering major focusing on Biomedical Engineering and the integration of robotics and medicine. Graduating in the Spring of 2017, I currently work on iGem's Product Development team. I am also Officer of External Affairs for the Cornell Fishing club and a volunteer at Schuyler Humane Society. When I'm not inhaling ice cream at the dairy bar, you can find me fishing around campus or in nearby Ithaca.<\/p>\n"};
+if (bioNum == 12) { return "<h2>Emily Lang\n\t<a href=\"https:\/\/www.linkedin.com\/in\/emily-lang-529712b0?trk=nav_responsive_tab_profile\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p>Emily is a junior majoring in biological engineering and minoring in biomedical engineering.  On campus, Emily performs biofuels research in the Ahner lab.  She is also involved in Club Field Hockey, Cornell Outdoor Education, Engineering Advising, and Institute of Biological Engineering.  Fun fact: Emily can make balloon animals!<\/p>"};
+if (bioNum == 13) { return "<h2>Fion Chu<\/h2>\n<h4>College: Human Ecology ('19)<\/h4>\n<h4>Major: Human, Biology, Health, and Society<\/h4>\n<p>I am a sophomore pre-med, majoring in Human Biology, Health, and Society. My research interests include neurobiology, psychology, nutrition, molecular biology, and epigenetics. I am currently involved in research that deals with epigenetic mechanisms, specifically the methylation states, of a specific locus in mice. Outside of academics, I also play volleyball. I played intramural volleyball during the spring, and I also go to open gym volleyball almost every week during the semester. One fun fact about me is that I am normally right-hand dominant, but in some sports, I am left-hand dominant.<\/p>"};
+if (bioNum == 14) { return "<h2>Sarah Ditton\n\t<a href=\"https:\/\/www.linkedin.com\/in\/sarah-ditton-a4438369\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Arts and Scienes ('18)<\/h4>\n<h4>Major: Biology (Microbiology)<\/h4>\n<p>I'm a biology major concentrating in microbiology, and I'm entering my junior year. I'm interested in microbial ecology, both human and soil. I play on Cornell's women's ultimate frisbee team, so hit me up if you ever want to toss! Fun fact about me is I plan to live in Iceland one day because it is one of the most beautiful places in the world.<\/p>"};
+if (bioNum == 15) { return "<h2>Stephanie Yiu\n\t<a href=\"https:\/\/www.linkedin.com\/in\/stephanieyiu\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Chemical Engineering<\/h4>\n<p>I am a Junior studying Chemical Engineering with minors in Business and Biomedical Engineering.  When I am not trapped in Olin or learning new programming languages, I tend to be working in the Study Abroad Office, or building the legendary Phoenix to represent the engineers for Dragon Day.  In my free time I enjoy baking, painting, and knitting, and I have a goldfish that is almost a foot long (yes, it is a goldfish, I promise).<\/p>"};
+if (bioNum == 16) { return "<h2>Taylor Song<\/h2>\n<h4>College: Engineering ('18)<\/h4>\n<h4>Major: Mechanical Engineering <\/h4>\n<p>This is Taylor's first year on the team!<\/p>"};
+if (bioNum == 17) { return "<h2>Amanda Ong\n\t<a href=\"https:\/\/www.linkedin.com\/in\/amandaong1\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Computer Science<\/h4>\n<p>I\u2019m a currently a sophomore (Class of 2019) majoring in Computer Science. In addition to iGem, I am involved with Forte Campus at Cornell, a women\u2019s business organization and Medium, an organization that promotes interdisciplinary design on campus. My research interest includes app development. Outside of clubs and academics, I love making videos and taking photos. Fun fact: I can walk on my hands!<\/p>"};
+if (bioNum == 18) { return "<h2>Carol Hung<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Biomedical Engineering<\/h4>\n<p>I am a sophomore at Cornell in the College of Engineering and am planning on majoring in Biomedical Engineering.  In addition to being a member of the iGEM team on campus, I am an undergraduate researcher in the Schaffer-Nishimura lab studying cancer metastasis in the brain. Fun Fact: When I was young, my dream job was to become a singer...until I realized that I am horrible at singing.<\/p>"};
+if (bioNum == 19) { return "<h2>Connie Li<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Chemical Engineering<\/h4>\n<p>I am a sophomore in the College of Engineering, majoring in Chemical Engineering. I am interested mainly in biological and sustainable energy applications of Chemical Engineering. On campus, aside from iGEM, I play on the Cornell Club Tennis Team, and am a member of Engineers for a Sustainable World- Biofuels. A fun fact about me is that my favorite animal is a giraffe.<\/p>"};
+if (bioNum == 20) { return "<h2>Greg Albano<\/h2>\n<h4>College: Agriculture and Life Sciences ('19)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p>Greg is a sophomore bioengineering major in Cornell's College of Agriculture and Life Science.  He loves baseball, chess, and of course iGEM, and can't wait to continue to pursue his dreams and interests over the next three years at Cornell.<\/p>"};
+if (bioNum == 21) { return "<h2>Maia Mirchandani<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Unaffiliated <\/h4>\n<p>I first joined Cornell iGEM as a freshman in Spring. Now a sophomore, I love being a member of the business team. Around campus, I also enjoy participating in ChemE Car and Women In Coding at Cornell. Eating as much ice cream as I possibly can, spending time with friends,  running to catch the TCAT, and biking on those few good weather days are my favorite things to do in Ithaca. I am currently unaffiliated in the College of Engineering, considering a major in Computer Science. A fun fact about me -- I have been in the bull ring during the Festival of San Fermin!<\/p>"};
+if (bioNum == 22) { return "<h2>Monica Ong<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Computer Science<\/h4>\n<p>I'm a rising sophomore and studying computer science. My research interest include educational technology and on campus, I like to make apps. I've taken gymnastics for 4 years so I'm quite adept at walking on my hands!<\/p>"};
+if (bioNum == 23) { return "<h2>Rohit Bandaru\n\t<a href=\"https:\/\/www.linkedin.com\/in\/rohit-b-a6b755b3\">\n\t\t<img src=\"resources\/social-media\/linkedin-icon.png\" height=\"28\" class=\"pull-right\" style=\"max-width:100px; margin-top: -2px; padding-right: 50px;\">\n\t<\/a>\n<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Electrical and Computer Engineering<\/h4>\n<p>I am a sophomore who is studying electrical and computer engineering. I am interested in genetic engineering and its greater role in technology. I grew up in New England and also enjoy basketball.<\/p>"};
+if (bioNum == 24) { return "<h2>Sneha Kabaria<\/h2>\n<h4>College: Arts and Scienes ('19)<\/h4>\n<h4>Major: Biology<\/h4>\n<p>Hi! My name is Sneha and I'm a sophomore (Class of 2019) Biological Sciences major. My research interests are in molecular biology and biochemistry. In my free time I enjoy sketching and singing.<\/p>"};
+if (bioNum == 25) { return "<h2>Swathi Chakrapani<\/h2>\n<h4>College: Agriculture and Life Sciences ('19)<\/h4>\n<h4>Major: Biological Engineering<\/h4>\n<p>Swathi is a biological engineering major in the Class of 2019. She is interested in physiological engineering. In her free time she swims with Cornell's Club Swimming team. Fun Fact: I'm actually five feet tall.<\/p>"};
+if (bioNum == 26) { return "<h2>Tennyson T Bardwell | Lead Web Designer<\/h2>\n<h4>College: Engineering ('19)<\/h4>\n<h4>Major: Computer Science<\/h4>\n<p>Tennyson is a Computer Science major through and through. When he was 12 years old he learned AppleScript and started writing macros for his computer. The summer before High School he learned Objective-C and built a small iPhone app. He followed his passion and took online python classes.<\/p>\n<p>When he arrived at Cornell he took honors Java and fell in love with programming as he had never before. He tried his hand at web design (acting as lead web designer for iGEM), created distributed systems, built several GUIs, and knows his way around half a dozen programming languages.<\/p>\n<p>For the summer after freshman year he interned at Kasisto, a NLU (Natural Language Understanding) company in NYC, where he constructed and deployed a central testing, and test-result analytics, webtool.<\/p>"};
+}
+data_highest_bio_num = 26;
+function getWrappedBio(bioNum){
+	return "<div id='active-bio' class='collapse col-xs-12 col-sm-12 col-md-12 col-lg-12 bio-section'>\n"
+			+ getHTMLStringForBio(bioNum)
+			+ "\n</div>";
+}
+</script>
+<div class="wrapper">
+<section id="team" class="section-header-javascriptTarget">
+	<h2>Our Team</h2>
+</section>
+</div>
+<div class="container">
+</div>
+<div class="container">
+	<div id='bioholder_0' onclick='collapseAllBut(0)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo0' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/1-Cornell_Saie.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_1' onclick='collapseAllBut(1)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo1' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.1-Cornell_YiFan.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_2' onclick='collapseAllBut(2)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo2' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.2-Grace.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_3' onclick='collapseAllBut(3)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo3' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.3-Cornell_Sachi.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_4' onclick='collapseAllBut(4)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo4' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.4-Gargi.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_5' onclick='collapseAllBut(5)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo5' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.5-Cornell_GeorgeHeadshot.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_6' onclick='collapseAllBut(6)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo6' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.6-Cornell_Reed.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_7' onclick='collapseAllBut(7)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo7' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/2.7-Cornell_Rishabh.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_8' onclick='collapseAllBut(8)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo8' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/4.2-Casey-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_9' onclick='collapseAllBut(9)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo9' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/4.2-Jonlin-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_10' onclick='collapseAllBut(10)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo10' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/4.3-Cornell_Tara-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_11' onclick='collapseAllBut(11)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo11' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.2-Jeremy-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_12' onclick='collapseAllBut(12)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo12' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.3-Emily-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_13' onclick='collapseAllBut(13)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo13' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.3-Fion-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_14' onclick='collapseAllBut(14)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo14' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.3-Sarah-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_15' onclick='collapseAllBut(15)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo15' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.3-Stephanie-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_16' onclick='collapseAllBut(16)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo16' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.3-Taylor-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_17' onclick='collapseAllBut(17)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo17' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Amanda-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_18' onclick='collapseAllBut(18)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo18' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Carol-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_19' onclick='collapseAllBut(19)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo19' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Connie-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_20' onclick='collapseAllBut(20)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo20' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Greg-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_21' onclick='collapseAllBut(21)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo21' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Maia-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_22' onclick='collapseAllBut(22)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo22' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Monica-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_23' onclick='collapseAllBut(23)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo23' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Rohit-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_24' onclick='collapseAllBut(24)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo24' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Sneha-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_25' onclick='collapseAllBut(25)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo25' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Swathi-md.jpg>
+						</div>
+					</div>
+				</div><div id='bioholder_26' onclick='collapseAllBut(26)'>
+					<div class='col-md-2 col-lg-2 col-sm-2 col-xs-4'>
+						<div class='team-member'>
+							<div class='team-member-mouseover-box'>
+							</div>
+							<img id='photo26' class='img-responsive team-member-photo' src=resources/team-members/team-members-md/5.4-Tennyson-md.jpg>
+						</div>
+					</div>
+				</div></div>
+<div style="height: 50px;"></div>
+	<div class="page-section container-fluid">
+<div class="wrapper">
+<section id="recruiting" class="section-header-javascriptTarget">
+	<h2>Recruiting</h2>
+</section>
+<section class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8" style="
+    margin-bottom: 40px;
+">
+	<big>
+		<p>
+			We're looking for excited students to push forth the field of synthetic biology. Our team is made of students from every year, every college, and every major. From gene-splicing in wet lab to pursuing business endeavors to organizing outreach events, bright passionate students make this team thrive.
+		</p>
+		<p>
+			Potential new team members apply in early January and join the team in the spring semester:
+		</p>
+		<p>
+			<lu>
+				</lu></p><li style="margin-left: 20px;">Spring: brainstorm next project and new member training (2 credits, 6-8 hrs/week)</li>
+				<li style="margin-left: 20px;">Summer: on-campus project work (20+ hrs/week) All new team members are expected to stay in Ithaca over the summer</li>
+				<li style="margin-left: 20px;">Fall: finish project and compete at iGEM jamborees (3-4 credits, 12-16 hrs/week)</li>
+			
+		<p></p>
+		<p>
+			<!-- We ask applicants to submit a resume to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team">cornelligem@gmail.com</a>. We will also look at any provided supplemental materials and conduct interviews before deciding on new members. -->
+			We will be posting the application here during recruitment season.
+		</p>
+		<p>
+			If you have any questions, feel free to send them to <a href="mailto:cornelligem@gmail.com?Subject=Joining%20the%20Team%20Questions">cornelligem@gmail.com</a>.
+		</p>
+	</big>
+</section>
+</div>
+</div>
+	<div class="wrapper">
+<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<!-- <div class="panel-heading"> -->
+			<div id="sponsors" class="section-header-javascriptTarget">
+				<a id="toggle" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSponsors" style="text-decoration: none;">
+						<h2>Sponsors
+								<img id="icon" class="arrow" src="resources/sponsors/expand.png" height="48" style="max-width:100px; margin-top: -2px;">
+						</h2>
+				</a>
+			</div>
+			
+		<!-- </div> -->
+		<div class="container">
+		</div>
+		<div id="collapseSponsors" class="panel-collapse collapse"><div class="panel-body">
+			<div class="container">
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_cornellcrest.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_biobasic.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_corning.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_alfaaesar.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_geneious.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_genscript.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_hardydiagnostics.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_idt.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_mathworks.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_neb.PNG>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_snapgene.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_thermofisher.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/Cornell_vwr.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/DNA20-logo-for-iGEM.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/KS_Logo_Final.png>
+				</div>
+				<div class='col-md-3 col-lg-3 col-sm-3 col-xs-3'>
+					<img class='img-responsive' src=resources/sponsors/version1.0/mendeley-logo-red.png>
+				</div>
+			</div>
+			<div class="container col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" style="margin-top: 30px; min-wdth: 500px;">
+			<a href="resources/sponsors/Sponsorship-Packet.pdf">
+				<img class="img-responsive" src="resources/buttons/download_sp.png" style="
+					max-width: 750px;
+					width: 100%;
+					margin: 0 auto;
+				">
+			</a>
+		</div>
+		</div></div>
+		
+	</div>
+</div>
+</div>
+
+<script>
+	(function(document){
+		var div = document.getElementById('toggle');
+		var icon = document.getElementById('icon');
+		var open = false;
+
+		div.addEventListener('click', function(){
+			if(open){
+			icon.className = 'arrow';  
+			} else{
+			icon.className = 'arrow open';
+			}
+
+			open = !open;
+		});
+	})(document);
+</script>
+
+	<!-- Footer Section -->
+	<div class="footer">
+	<div class="container">
+		<ul class='contact-us'>
+			<li><h3>Contact Us:</h3></li>
+			<li>
+				<img src="resources/footer/em.png">
+				<a href="mailto:cornelligem@gmail.com">cornelligem@gmail.com</a>
+			</li>
+			<li>
+				<img src="resources/footer/fb.png">
+				<a href="http://facebook.com/cornelligem">facebook.com/cornelligem</a>
+			</li>
+			<li>
+				<img src="resources/footer/tw.png">
+				<a href="http://twitter.com/cugem">@CUGEM</a>
+			</li>
+		</ul>
+	</div>
+	<div class='credit'>
+			<p>© Cornell iGEM | Designed By: Tennyson Bardwell and Rishabh Singh</p>
+	</div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!--<script src="js/smoothscroll.js?1709185189"></script>-->
+	<script src="js/script.js?1709185189"></script>
+	<script src="js/team.js?1709185189"></script>
+	<script src="http://www.youtube.com/iframe_api"></script>
+</body>
+</html>
